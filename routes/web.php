@@ -54,4 +54,3 @@ Route::group([
 
     //Route::resource('sites', SitesController::class, ['as' => 'admin.blog']); // сайты
 });
-
