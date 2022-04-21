@@ -1,0 +1,93 @@
+/* login register section - start
+==================================================================================================== */
+.login-reg-section {
+	.form-title {
+		margin: 0px;
+		padding: 30px;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		border-bottom: 1px solid $gray-deep-color;
+	}
+
+	// login-container - start
+	.login-container {
+		border-radius: 3px;
+		border: 1px solid $gray-deep-color;
+		.social-accounts {
+			padding: 30px;
+			padding-bottom: 0px;
+			span {
+				width: 100%;
+				display: block;
+				margin-bottom: 15px;
+			}
+			ul {
+				width: 100%;
+				margin: 0px;
+				padding: 0px;
+				display: table;
+				li {
+					float: left;
+					list-style: none;
+					margin-right: 30px;
+					display: inline-block;
+					&:last-child {margin-right: 0px;}
+					a {
+						font-size: 14px;
+						font-weight: 600;
+						color: $heading-color;
+						text-transform: uppercase;
+						i {font-size: 16px;}
+						&:hover {
+							color: $past-color;
+						}
+					}
+				}
+			}
+		}
+		.login-form {
+			padding: 30px;
+			.forgetpass-btn {
+				font-weight: 500;
+				color: $heading-color;
+			}
+			.custom-btn {
+				width: 100%;
+				display: block;
+				border-radius: 30px;
+			}
+		}
+	}
+	// login-container - end
+
+	// register-container - start
+	.register-container {
+		border-radius: 3px;
+		border: 1px solid $gray-deep-color;
+		.register-form {
+			padding: 30px;
+			.register-btn {
+				width: 100%;
+				height: 50px;
+				display: block;
+				font-weight: 600;
+				line-height: 46px;
+				text-align: center;
+				color: $body-color;
+				border-radius: 30px;
+				text-transform: uppercase;
+				border: 2px solid $gray-deep-color;
+				&:hover {
+					color: $white-color;
+					border-color: $past-color;
+					background-color: $past-color;
+					box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+				}
+			}
+		}
+	}
+	// register-container - end
+}
+/* login register section - end
+==================================================================================================== */

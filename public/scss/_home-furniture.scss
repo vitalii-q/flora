@@ -1,0 +1,844 @@
+/* home furniture 1 - start
+==================================================================================================== */
+
+// some changes here - start
+// ==================================================
+.home-furniture-1 {
+
+	::selection {color: $green-color;}
+
+	// form settinge - start
+	.form-item {
+		input {
+			&:focus {
+				border-color: $green-color;
+				+.form-item-btn {
+					background-color: $green-color;
+				}
+			}
+		}
+	}
+	.form-textarea {
+		margin-bottom: 30px;
+		textarea {
+			&:focus {
+				border-color: $green-color;
+			}
+		}
+	}
+	// form settinge - end
+
+	// quick-view - start
+	.quick-view {
+		background-color: rgba(75, 186, 91, .5);
+		&:hover {
+			background-color: rgba(75, 186, 91, 1);
+		}
+	}
+	// quick-view - end
+
+	// post-meta - start
+	.post-meta {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: $green-color;
+					}
+				}
+			}
+		}
+	}
+	// post-meta - end
+
+	// owl settings - start
+	.owl-theme {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					&:before {
+						background-color: $green-color;
+					}
+				}
+			}
+		}
+		.owl-dots {
+			.owl-dot.active {
+				span {
+					background: $green-color;
+				}
+			}
+		}
+	}
+	// owl settings - end
+
+	// plus-effect - start
+	.plus-effect {
+		&:before,
+		&:after {
+			background-color: $green-color;
+		}
+	}
+	// plus-effect - end
+
+	// product-item - start
+	.product-item {
+		.item-content {
+			.item-title {
+				&:hover {color: $green-color;}
+			}
+		}
+		.hover-content {
+			.add-to-cart {
+				&:hover {
+					border-color: $green-color;
+					background-color: $green-color;
+				}
+			}
+			.product-meta {
+				ul {
+					li {
+						a {
+							&:hover {color: $green-color;}
+						}
+					}
+				}
+			}
+		}
+	}
+	// product-item - end
+
+	// item-title - start
+	.item-title {
+		&:hover {
+			color: $green-color;
+		}
+	}
+	// item-title - start
+
+}
+// some changes here - end
+// ==================================================
+
+
+
+// slider-section - start
+// ==================================================
+.slider-section {
+	.furniture-masonry {
+		.grid-sizer,
+		.grid-item {
+			width: 25%;
+			height: 350px;
+			overflow: hidden;
+		}
+
+		.grid-item {
+			float: left;
+			position: relative;
+			display: inline-block;
+			img {
+				width: 100%;
+				display: block;
+				transform: scale(1);
+				transition: $default-transition;
+			}
+			&:hover {
+				img {transform: scale(1.1);}
+			}
+
+			.item-content {
+				left: 0;
+				right: 0;
+				top: 50%;
+				z-index: 1;
+				padding: 0px 30px;
+				position: absolute;
+				transform: translateY(-50%);
+				.price-text {
+					font-size: 16px;
+					strong {
+						font-size: 24px;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+		.grid-item-big {
+			width: 50%;
+			height: 700px;
+		}
+		.grid-item-width {
+			width: 50%;
+			height: 350px;
+		}
+	}
+
+	// furniture-carousel - start
+	.furniture-masonry {
+		.grid-item {
+			.furniture-slider {
+				.item {
+					padding: 195px 0px;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center center;
+					.slider-content {
+						margin: 0 auto;
+						display: table;
+						max-width: 600px;
+						h3 {
+							font-size: 36px;
+							font-weight: 600;
+						}
+						h1 {
+							font-size: 42px;
+							font-weight: 800;
+							text-transform: uppercase;
+						}
+						h2 {
+							font-size: 54px;
+							font-weight: 800;
+							text-transform: uppercase;
+						}
+					}
+				}
+
+				.owl-dots {
+					left: 0;
+					right: 0;
+					bottom: 15px;
+					margin: 0px;
+					position: absolute;
+				}
+			}
+		}
+	}
+	// furniture-carousel - end
+}
+// slider-section - end
+// ==================================================
+
+
+
+// furniture-brand-section - start
+// ==================================================
+.furniture-brand-section {
+
+	.furniture-brand-menu {
+		ul {
+			li {
+				width: 16.6667%;
+				a {
+					width: 100%;
+					height: 100%;
+					display: block;
+					padding: 30px 15px;
+					text-align: center;
+					position: relative;
+					color: $white-color;
+					.icon {
+						width: 100%;
+						height: 65px;
+						display: table;
+						line-height: 65px;
+						text-align: center;
+						margin-bottom: 15px;
+					}
+					&:before {
+						width: 0;
+						height: 0;
+						left: 50%;
+						opacity: 0;
+						content: '';
+						bottom: -35px;
+						position: absolute;
+						transform: translateX(-50%);
+						transition: $default-transition;
+						border-top: 20px solid $green-color;
+						border-left: 20px solid transparent;
+						border-right: 20px solid transparent;
+						border-bottom: 20px solid transparent;
+					}
+				}
+				.active {
+					&:before {
+						opacity: 1;
+						bottom: -40px;
+					}
+				}
+			}
+		}
+	}
+
+	.furniture-items-list {
+		>ul {
+			width: 100%;
+			display: table;
+			>li {
+				width: 20%;
+				float: left;
+				padding: 30px;
+				text-align: center;
+				display: inline-block;
+				.item-price {
+					strong {
+						font-size: 24px;
+						font-weight: 600;
+					}
+				}
+				&:hover {
+					.image-container {
+						.absolute-cartview {
+							opacity: 1;
+							transform: translate(-50%,-50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// furniture-brand-section - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.home-furniture-1 {
+	.featured-section {
+		.featured-container {
+			.digital-featured-nav {
+				li {
+					a {
+						&:hover {
+							color: $green-color;
+						}
+					}
+					a.active {
+						color: $green-color;
+					}
+				}
+			}
+		}
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// promotion-banner-section - start
+// ==================================================
+.promotion-banner-section {
+	.furniture-banner {
+		padding: 200px 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		.promotion-content {
+			h3 {
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+			h2 {
+				font-size: 42px;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+// promotion-banner-section - end
+// ==================================================
+
+
+
+// trending-section - start
+// ==================================================
+.trending-section {
+
+	.top-rated-furniture,
+	.new-furniture-arrival {
+		position: relative;
+		.owl-theme {
+			.owl-nav {
+				right: 0;
+				top: -77px;
+				display: table;
+				position: absolute;
+			}
+		}
+	}
+
+	// new-furniture-arrival - start
+	.new-furniture-arrival {
+		.new-furniture-carousel {
+			.item {
+				.new-furniture-item {
+					position: relative;
+					margin-bottom: 30px;
+					.post-labels {
+						top: 10px;
+						left: 10px;
+						position: absolute;
+					}
+					&:hover {
+						.image-container {
+							.absolute-cartview {
+								opacity: 1;
+								transform: translate(-50%,-50%);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	// new-furniture-arrival - end
+
+	// top-rated-furniture - start
+	.top-rated-furniture {
+		.top-rated-furniture-carousel {
+			.item {
+				.top-rated-furniture-item {
+					position: relative;
+					margin-bottom: 30px;
+					.post-labels {
+						top: 10px;
+						left: 10px;
+						position: absolute;
+					}
+					&:hover {
+						.image-container {
+							.absolute-cartview {
+								opacity: 1;
+								transform: translate(-50%,-50%);
+							}
+						}
+					}
+					.item-content {
+						.rateing-star {
+							display: table;
+							margin: 0 auto 10px;
+							ul {
+								float: left;
+								margin: 0px;
+								padding: 0px;
+								li {
+									float: left;
+									color: #f3cd1e;
+									list-style: none;
+									margin-right: 2px;
+									display: inline-block;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	// top-rated-furniture - end
+
+}
+// trending-section - end
+// ==================================================
+
+
+
+// popular-section - start
+// ==================================================
+.home-furniture-1 {
+	.popular-section {
+		.most-viewde-products {
+			.most-viewde-item {
+				.item-title {
+					&:hover {
+						color: $green-color;
+					}
+				}
+			}
+		}
+	}
+}
+// popular-section - end
+// ==================================================
+
+
+
+// brand-logo-section - start
+// ==================================================
+.home-furniture-1 {
+	.brand-logo-section {
+		.digital-brandlogo {
+
+			.brand-logo-carousel {
+				.item {
+					a {
+						width: 100%;
+						height: auto;
+						line-height: unset;
+					}
+				}
+			}
+
+			.owl-theme {
+				.owl-nav {
+					.owl-prev,
+					.owl-next {
+						&:hover {
+							&:before {
+								background-color: $green-color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// brand-logo-section - end
+// ==================================================
+
+
+
+// blog-section - start
+// ==================================================
+.home-furniture-1 {
+	.blog-section {
+		.blog-grid-item-2 {
+			.blog-content {
+				.blog-title {
+					&:hover {color: $green-color;}
+				}
+			}
+			&:hover {
+				.blog-title {color: $green-color;}
+			}
+		}
+	}
+}
+// blog-section - end
+// ==================================================
+
+/* home furniture 1 - end
+==================================================================================================== */
+
+
+
+
+
+/* home furniture 2 - start
+==================================================================================================== */
+
+// some changes here - start
+// ==================================================
+.home-furniture-2 {
+
+	::selection {color: $olive-green;}
+
+	// form settinge - start
+	.form-item {
+		input {
+			&:focus {
+				border-color: $olive-green;
+				+.form-item-btn {
+					background-color: $olive-green;
+				}
+			}
+		}
+	}
+	.form-textarea {
+		margin-bottom: 30px;
+		textarea {
+			&:focus {
+				border-color: $olive-green;
+			}
+		}
+	}
+	// form settinge - end
+
+	// quick-view - start
+	.quick-view {
+		background-color: rgba(156, 177, 48, .5);
+		&:hover {
+			background-color: rgba(156, 177, 48, 1);
+		}
+	}
+	// quick-view - end
+
+	// post-meta - start
+	.post-meta {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: $olive-green;
+					}
+				}
+			}
+		}
+	}
+	// post-meta - end
+
+	// owl settings - start
+	.owl-theme {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					&:before {
+						background-color: $olive-green!important;
+					}
+				}
+			}
+		}
+		.owl-dots {
+			.owl-dot.active {
+				span {
+					background: $olive-green;
+				}
+			}
+		}
+	}
+	// owl settings - end
+
+	// plus-effect - start
+	.plus-effect {
+		&:before,
+		&:after {
+			background-color: $olive-green;
+		}
+	}
+	// plus-effect - end
+
+	// product-item - start
+	.product-item {
+		.item-content {
+			.item-title {
+				&:hover {color: $olive-green;}
+			}
+		}
+		.hover-content {
+			.add-to-cart {
+				&:hover {
+					border-color: $olive-green;
+					background-color: $olive-green;
+				}
+			}
+			.product-meta {
+				ul {
+					li {
+						a {
+							&:hover {color: $olive-green;}
+						}
+					}
+				}
+			}
+		}
+	}
+	// product-item - end
+
+	// item-title - start
+	.item-title {
+		&:hover {
+			color: $olive-green;
+		}
+	}
+	// item-title - start
+
+}
+// some changes here - end
+// ==================================================
+
+
+
+// slider-section - start
+// ==================================================
+.home-furniture-2 {
+	.slider-section {
+		.slider-item {
+			padding: 150px 0px;
+			h1 {
+				font-size: 48px;
+				font-weight: 600;
+				text-transform: uppercase;
+				strong {font-weight: 800;}
+			}
+			h2 {
+				font-size: 42px;
+				font-weight: 600;
+			}
+		}
+	}
+}
+// slider-section - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.home-furniture-2 {
+	.featured-section {
+		.featured-container {
+			.digital-featured-nav {
+				li {
+					a {
+						&:hover {color: $olive-green;}
+					}
+					.active {color: $olive-green;}
+				}
+			}
+		}
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// popular-section - start
+// ==================================================
+.popular-section {
+	.best-seller-furniture {
+		.best-seller-item {
+			position: relative;
+			.best-seller-label {
+				top: -3px;
+				left: -3px;
+			}
+			.best-seller-label-2 {
+				top: -3px;
+				right: -3px;
+			}
+			.item-content {width: 60%;}
+
+			.item-content {
+				width: 40%;
+				padding: 60px 30px;
+				.item-tag {
+					width: 100%;
+					display: table;
+					font-size: 16px;
+					font-weight: 500;
+					color: $body-color;
+					margin-bottom: 15px;
+					text-transform: uppercase;
+				}
+				.item-title {
+					font-size: 36px;
+					font-weight: 800;
+					margin-bottom: 15px;
+				}
+				.color-list {
+					ul {
+						li {
+							margin-right: 10px;
+							&:last-child {margin-right: 0px;}
+							a {
+								width: 30px;
+								height: 30px;
+								border-radius: 100%;
+								box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+// popular-section - end
+// ==================================================
+
+
+
+// latest-post-section - start
+// ==================================================
+// -->> from "home-food-1 page"
+// latest-post-section - end
+// ==================================================
+
+
+
+// blog-section - start
+// ==================================================
+.home-furniture-2 {
+	.blog-section {
+		.blog-3-item-list {
+			.blog-grid-item-3 {
+				.blog-content {
+					.read-more {
+						&:hover {color: $olive-green;}
+					}
+				}
+				&:hover {
+					.blog-content {
+						.blog-title {color: $olive-green;}
+					}
+				}
+			}
+		}
+	}
+}
+// blog-section - end
+// ==================================================
+
+
+
+// footer-section - start
+// ==================================================
+.home-furniture-2 {
+	.footer-section {
+		.furniture-footer {
+
+			.footer-top {
+
+				.footer-contact {
+					.social-links {
+						ul {
+							li {
+								a {
+									&:hover {background-color: $olive-green;}
+								}
+							}
+						}
+					}
+				}
+
+				.useful-links {
+					ul {
+						li {
+							a {
+								&:hover {color: $olive-green;}
+							}
+						}
+					}
+				}
+
+			}
+
+			.footer-bottom {
+				.social-links {
+					ul {
+						li {
+							a {
+								&:hover {color: $olive-green;}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+// footer-section - end
+// ==================================================
+/* home furniture 2 - end
+==================================================================================================== */

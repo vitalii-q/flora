@@ -1,0 +1,47 @@
+/* contact page - start
+==================================================================================================== */
+.contact-section {
+	width: 100%;
+	display: table;
+
+	#google-map,
+	.store-image {
+		width: 50%;
+		height: 500px;
+		border-radius: 0px;
+	}
+
+	.store-info,
+	.contact-info {
+		width: 50%;
+		height: 500px;
+		padding: 200px 30px;
+
+		.title-text {
+			span {
+				font-size: 18px;
+				font-weight: 600;
+				position: relative;
+				padding-bottom: 15px;
+				color: $heading-color;
+				text-transform: uppercase;
+				&:before {
+					left: 0px;
+					bottom: 0px;
+					width: 100%;
+					height: 3px;
+					content: '';
+					position: absolute;
+					background-color: $past-color;
+				}
+			}
+		}
+	}
+
+	.contact-form {
+		.section-title {border: none;}
+	}
+
+}
+/* contact page - end
+==================================================================================================== */

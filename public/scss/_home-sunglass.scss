@@ -1,0 +1,740 @@
+/* home sunglass 1 - start
+==================================================================================================== */
+
+// some changes here - start
+// ==================================================
+.home-sunglass-1 {
+
+	::selection {
+		color: $white-color;
+		background: $yellow-deep;
+	}
+
+	.container {
+		margin: 0 auto;
+		max-width: 1570px;
+	}
+
+	// form settinge - start
+	.form-item {
+		input {
+			&:focus {
+				border-color: $yellow-deep;
+				+.form-item-btn {
+					background-color: $yellow-deep;
+				}
+			}
+		}
+	}
+	.form-textarea {
+		margin-bottom: 30px;
+		textarea {
+			&:focus {
+				border-color: $yellow-deep;
+			}
+		}
+	}
+	// form settinge - end
+
+	// quick-view - start
+	.quick-view {
+		background-color: rgba(237, 180, 2, .5);
+		&:hover {
+			background-color: rgba(237, 180, 2, 1);
+		}
+	}
+	// quick-view - end
+
+	// post-meta - start
+	.post-meta {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: $yellow-deep;
+					}
+				}
+			}
+		}
+	}
+	// post-meta - end
+
+	// owl settings - start
+	.owl-theme {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					&:before {
+						background-color: $yellow-deep;
+					}
+				}
+			}
+		}
+		.owl-dots {
+			.owl-dot.active {
+				span {
+					background: $yellow-deep;
+				}
+			}
+		}
+	}
+	// owl settings - end
+
+	// plus-effect - start
+	.plus-effect {
+		&:before,
+		&:after {
+			background-color: $yellow-deep;
+		}
+	}
+	// plus-effect - end
+
+	// product-item - start
+	.product-item {
+		.item-content {
+			.item-title {
+				&:hover {color: $yellow-deep;}
+			}
+		}
+		.hover-content {
+			.add-to-cart {
+				&:hover {
+					border-color: $yellow-deep;
+					background-color: $yellow-deep;
+				}
+			}
+			.product-meta {
+				ul {
+					li {
+						a {
+							&:hover {color: $yellow-deep;}
+						}
+					}
+				}
+			}
+		}
+	}
+	// product-item - end
+
+	// item-title - start
+	.item-title {
+		&:hover {
+			color: $yellow-deep;
+		}
+	}
+	// item-title - start
+
+}
+// some changes here - end
+// ==================================================
+
+
+
+// slider-section - start
+// ==================================================
+.home-sunglass-1 {
+	.slider-section {
+		.overlay-white {
+			padding: 200px 0px;
+			padding-top: 350px;
+			background-color: rgba(255,255,255,0.2);
+		}
+		.slider-item {
+			h1 {
+				font-size: 72px;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+			h2 {
+				font-size: 42px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			h3 {
+				font-size: 30px;
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+// slider-section - end
+// ==================================================
+
+
+
+// sunglass-section - start
+// ==================================================
+.sunglass-section {
+	.mens-sunglass,
+	.womens-sunglass {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		.sunglass-content {
+			padding-top: 140px;
+			h2 {
+				font-size: 72px;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+			h3 {
+				font-size: 42px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			h4 {
+				font-size: 30px;
+				font-weight: 500;
+				font-style: italic;
+				text-transform: capitalize;
+				text-decoration: underline;
+			}
+		}
+
+		.mens-sunglass-carousel,
+		.womens-sunglass-carousel {
+			.item {
+				padding: 15px;
+				overflow: hidden;
+				border-radius: 3px;
+				&:hover {
+					.image-container {
+						.absolute-cartview {
+							opacity: 1;
+							transform: translate(-50%,-50%);
+						}
+					}
+				}
+				.item-content {
+					padding: 15px;
+				}
+			}
+		}
+
+		.owl-theme {
+			.owl-nav {
+				top: -77px;
+				right: 0px;
+				position: absolute;
+			}
+		}
+	}
+}
+// sunglass-section - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.home-sunglass-1 {
+	.featured-section {
+		.featured-container {
+			.digital-featured-nav {
+				li {
+					&:hover {
+						a {color: $yellow-deep;}
+					}
+					a.active {
+						color: $yellow-deep;
+					}
+				}
+			}
+		}
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// category-section - start
+// ==================================================
+.category-section {
+	.sunglass-1-category {
+		.category-item {
+			overflow: hidden;
+			border-radius: 3px;
+			position: relative;
+			&:hover {
+				.plus-effect {
+					opacity: 1;
+					z-index: 2;
+				}
+			}
+			.item-content {
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: 30px;
+				position: absolute;
+				h2 {
+					font-size: 24px;
+					font-weight: 800;
+					text-transform: uppercase;
+				}
+				h3 {
+					font-size: 16px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+// category-section - end
+// ==================================================
+
+
+
+// popular-section - start
+// ==================================================
+.home-sunglass-1 {
+	.popular-section {
+		.owl-theme {
+			.owl-nav {
+				top: -77px;
+				right: 0px;
+				position: absolute;
+			}
+		}
+	}
+}
+// popular-section - end
+// ==================================================
+
+
+
+// promotion-banner-section - start
+// ==================================================
+.promotion-banner-section {
+	.sunglass-banner-1 {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		.promotion-content {
+			h2 {
+				font-size: 84px;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+			h3 {
+				font-size: 36px;
+				font-weight: 600;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+// promotion-banner-section - end
+// ==================================================
+
+
+
+// blog-section - start
+// ==================================================
+.home-sunglass-1 {
+	.blog-section {
+		.blog-grid-item {
+			.blog-image {
+				img {
+					width: 100%;
+					display: block;
+				}
+			}
+			.blog-content {
+				.blog-title {
+					&:hover {color: $yellow-deep;}
+				}
+				.read-more {
+					&:hover {color: $yellow-deep;}
+				}
+			}
+		}
+	}
+}
+// blog-section - end
+// ==================================================
+
+
+
+// footer-section - start
+// ==================================================
+.home-sunglass-1 {
+	.footer-section {
+		.footer-title {
+			color: $white-color;
+		}
+
+		.jewellry-footer {
+
+			.footer-newsletter {border-bottom: 1px solid rgba(255,255,255,0.2);}
+
+			.footer-middle {
+				.footer-contact {
+					.contact-info-list {
+						ul {
+							li {
+								color: #cccccc;
+							}
+						}
+					}
+
+					.social-links {
+						ul {
+							li {
+								a {
+									&:hover {
+										background-color: $yellow-deep;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.useful-links {
+					ul {
+						li {
+							a {
+								color: #cccccc;
+								&:hover {color: $yellow-deep;}
+							}
+						}
+					}
+				}
+
+				.footer-instagram {
+					ul {
+						margin-left: -5px;
+						margin-right: -5px;
+						li {
+							width: 93px;
+							height: 65px;
+							padding: 5px;
+							overflow: hidden;
+							a {
+								width: 100%;
+								height: 100%;
+								display: block;
+								overflow: hidden;
+								position: relative;
+								border-radius: 3px;
+								&:before {
+									top: 0;
+									left: 0;
+									right: 0;
+									bottom: 0;
+									z-index: 1;
+									opacity: 0;
+									content: '';
+									position: absolute;
+									transition: $default-transition;
+									background-color: $overlay-black;
+								}
+								&:hover {
+									&:before {opacity: 1;}
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+// footer-section - end
+// ==================================================
+
+/* home sunglass 1 - end
+==================================================================================================== */
+
+
+
+
+
+/* home sunglass 2 - start
+==================================================================================================== */
+
+// some changes here - start
+// ==================================================
+.home-sunglass-2 {
+
+	::selection {
+		color: $white-color;
+		background: $purple-color;
+	}
+
+	// form settinge - start
+	.form-item {
+		input {
+			&:focus {
+				border-color: $purple-color;
+				+.form-item-btn {
+					background-color: $purple-color;
+				}
+			}
+		}
+	}
+	.form-textarea {
+		margin-bottom: 30px;
+		textarea {
+			&:focus {
+				border-color: $purple-color;
+			}
+		}
+	}
+	// form settinge - end
+
+	// quick-view - start
+	.quick-view {
+		background-color: rgba(157, 59, 198, .5);
+		&:hover {
+			background-color: rgba(157, 59, 198, 1);
+		}
+	}
+	// quick-view - end
+
+	// post-meta - start
+	.post-meta {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: $purple-color;
+					}
+				}
+			}
+		}
+	}
+	// post-meta - end
+
+	// owl settings - start
+	.owl-theme {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					&:before {
+						background-color: $purple-color;
+					}
+				}
+			}
+		}
+		.owl-dots {
+			.owl-dot.active {
+				span {
+					background: $purple-color;
+				}
+			}
+		}
+	}
+	// owl settings - end
+
+	// plus-effect - start
+	.plus-effect {
+		&:before,
+		&:after {
+			background-color: $purple-color;
+		}
+	}
+	// plus-effect - end
+
+	// product-item - start
+	.product-item {
+		.item-content {
+			.item-title {
+				&:hover {color: $purple-color;}
+			}
+		}
+		.hover-content {
+			.add-to-cart {
+				&:hover {
+					border-color: $purple-color;
+					background-color: $purple-color;
+				}
+			}
+			.product-meta {
+				ul {
+					li {
+						a {
+							&:hover {color: $purple-color;}
+						}
+					}
+				}
+			}
+		}
+	}
+	// product-item - end
+
+	// item-title - start
+	.item-title {
+		&:hover {
+			color: $purple-color;
+		}
+	}
+	// item-title - start
+
+}
+// some changes here - end
+// ==================================================
+
+
+
+// slider-section - start
+// ==================================================
+.home-sunglass-2 {
+	.slider-section {
+		.slider-item {
+			padding: 150px 0px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			.slider-content {
+				h1 {
+					font-size: 72px;
+					font-weight: 800;
+					text-transform: uppercase;
+				}
+				h2 {
+					font-size: 42px;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+				h3 {
+					font-size: 30px;
+					font-weight: 500;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+// slider-section - end
+// ==================================================
+
+
+
+// deals-section - start
+// ==================================================
+.home-sunglass-2 {
+	.deals-section {
+		.deal-item {
+			background-color: $gray-color;
+			border: 2px solid $purple-color;
+			.item-content {
+				.progress {
+					.progress-bar {
+						background-color: $purple-color;
+					}
+				}
+			}
+		}
+	}
+}
+// deals-section - end
+// ==================================================
+
+
+
+// popular-section - start
+// ==================================================
+.home-sunglass-2 {
+	.popular-section {
+		.owl-theme {
+			.owl-nav {
+				right: 0;
+				top: -77px;
+				position: absolute;
+			}
+		}
+	}
+}
+// popular-section - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.home-sunglass-2 {
+	.featured-section {
+		.featured-container {
+			.digital-featured-nav {
+				li {
+					&:hover {
+						a {color: $purple-color;}
+					}
+					a.active {color: $purple-color;}
+				}
+			}
+		}
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// blog-section - start
+// ==================================================
+.home-sunglass-2 {
+	.blog-section {
+		.blog-grid-item {
+			.blog-content {
+				padding: 0px;
+				.blog-title {
+					&:hover {color: $purple-color;}
+				}
+				.read-more {
+					&:hover {color: $purple-color}
+				}
+			}
+		}
+	}
+}
+// blog-section - end
+// ==================================================
+
+
+
+// footer-section - start
+// ==================================================
+.home-sunglass-2 {
+	.footer-section {
+		.shoes-footer {
+
+			.footer-middle {
+
+				.footer-contact {
+					.social-links {
+						ul {
+							li {
+								a:hover {
+									background-color: $purple-color;
+								}
+							}
+						}
+					}
+				}
+				.useful-links {
+					ul {
+						li {
+							a{
+								&:hover {color: $purple-color;}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+// footer-section - end
+// ==================================================
+/* home sunglass 2 - end
+==================================================================================================== */

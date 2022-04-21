@@ -1,0 +1,48 @@
+/* table of content - start
+==================================================================================================== */
+/* ==================================================
+Project Name 	:  Strom E-Commerce
+File 			:  Css Base
+Version 		:  1.0.0
+Last change 	:  -- ----- ----
+Author 			:  -------------
+Developer     	:  Rakibul Islam Dewan
+================================================== */
+/* table of content - end
+==================================================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+@import "variable";
+@import "reset";
+@import "header";
+@import "footer";
+
+@import "_products.scss";
+@import "_breadcrumb.scss";
+@import "_slider-section.scss";
+@import "_sidebar-section.scss";
+@import "_promotion-section.scss";
+@import "_brand-logo-section.scss";
+@import "_newsletter-section.scss";
+@import "_blog-section.scss";
+@import "_testimonial-section.scss";
+
+@import "_home-bicycle.scss";
+@import "_home-digital.scss";
+@import "_home-fashion.scss";
+@import "_home-food.scss";
+@import "_home-furniture.scss";
+@import "_home-jewellry.scss";
+@import "_home-shoes.scss";
+@import "_home-sunglass.scss";
+@import "_home-tools.scss";
+@import "_home-watches.scss";
+@import "_product-page.scss";
+@import "_about.scss";
+@import "_product-details.scss";
+@import "_shopping-cart.scss";
+@import "_checkout.scss";
+@import "_login-reg.scss";
+@import "_contact.scss";
+@import "_error.scss";
+@import "_responsive.scss";

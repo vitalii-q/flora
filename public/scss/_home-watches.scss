@@ -1,0 +1,1001 @@
+/* home watches 1 - start
+==================================================================================================== */
+
+// some changes here - start
+// ==================================================
+.home-watches-1 {
+
+	::selection {
+		color: $white-color;
+		background: $gplus-red;
+	}
+
+	.container {
+		margin: 0 auto;
+		max-width: 1570px;
+	}
+
+	// form settinge - start
+	.form-item {
+		input {
+			&:focus {
+				border-color: $gplus-red;
+				+.form-item-btn {
+					background-color: $gplus-red;
+				}
+			}
+		}
+	}
+	.form-textarea {
+		margin-bottom: 30px;
+		textarea {
+			&:focus {
+				border-color: $gplus-red;
+			}
+		}
+	}
+	// form settinge - end
+
+	// quick-view - start
+	.quick-view {
+		background-color: rgba(245, 108, 87, .5);
+		&:hover {
+			background-color: rgba(245, 108, 87, 1);
+		}
+	}
+	// quick-view - end
+
+	// post-meta - start
+	.post-meta {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: $gplus-red;
+					}
+				}
+			}
+		}
+	}
+	// post-meta - end
+
+	// owl settings - start
+	.owl-theme {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					&:before {
+						background-color: $gplus-red;
+					}
+				}
+			}
+		}
+		.owl-dots {
+			.owl-dot.active {
+				span {
+					background: $gplus-red;
+				}
+			}
+		}
+	}
+	// owl settings - end
+
+	// plus-effect - start
+	.plus-effect {
+		&:before,
+		&:after {
+			background-color: $gplus-red;
+		}
+	}
+	// plus-effect - end
+
+	// product-item - start
+	.product-item {
+		.item-content {
+			.item-title {
+				&:hover {color: $gplus-red;}
+			}
+		}
+		.hover-content {
+			.add-to-cart {
+				&:hover {
+					border-color: $gplus-red;
+					background-color: $gplus-red;
+				}
+			}
+			.product-meta {
+				ul {
+					li {
+						a {
+							&:hover {color: $gplus-red;}
+						}
+					}
+				}
+			}
+		}
+	}
+	// product-item - end
+
+	// item-title - start
+	.item-title {
+		&:hover {
+			color: $gplus-red;
+		}
+	}
+	// item-title - start
+
+}
+// some changes here - end
+// ==================================================
+
+
+
+// header-section - start
+// ==================================================
+.header-section {
+	.watches-header {
+		.container {
+			margin: 0 auto;
+			max-width: 1200px;
+		}
+	}
+}
+// header-section - end
+// ==================================================
+
+
+
+// slider-section - start
+// ==================================================
+.home-watches-1 {
+	.slider-section {
+		.slider-item {
+			.container {
+				margin: 0 auto;
+				max-width: 1200px;
+			}
+			.slider-content {
+				padding: 150px 0px;
+				h1 {
+					font-size: 66px;
+					font-weight: 800;
+					text-transform: uppercase;
+				}
+				h2 {
+					font-size: 36px;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+				p {
+					font-size: 16px;
+					font-weight: 500;
+					text-transform: uppercase;
+					strong {
+						font-size: 24px;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}
+// slider-section - end
+// ==================================================
+
+
+
+// category-section - start
+// ==================================================
+.category-section {
+	.watches-category {
+		ul {
+			width: 100%;
+			li {
+				width: 50%;
+				display: table;
+				overflow: hidden;
+				position: relative;
+				.link-btn {
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					position: absolute;
+					background-color: rgba(0,0,0,0.2);
+					&:before {
+						top: 50%;
+						left: 50%;
+						opacity: 0;
+						font-size: 60px;
+						content: '\f061';
+						font-weight: 900;
+						position: absolute;
+						color: $white-color;
+						transition: $default-transition;
+						transform: translate(-50%,-50%);
+						font-family: 'Font Awesome 5 Free';
+					}
+				}
+				.item-content {
+					top: 50%;
+					left: 50%;
+					opacity: 1;
+					display: table;
+					text-align: center;
+					position: absolute;
+					visibility: visible;
+					transform: translate(-50%,-50%);
+					transition: $default-transition;
+					h2 {
+						font-size: 54px;
+						font-weight: 800;
+						text-transform: uppercase;
+						text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+					}
+					h3 {
+						font-size: 36px;
+						font-weight: 600;
+						text-transform: uppercase;
+						text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+					}
+				}
+				&:hover {
+					.item-content {
+						opacity: 0;
+						visibility: hidden;
+					}
+					.link-btn {
+						background-color: rgba(245, 108, 87, .9);
+						&:before {opacity: 1;}
+					}
+				}
+			}
+		}
+	}
+}
+// category-section - end
+// ==================================================
+
+
+
+// brand-logo-section - start
+// ==================================================
+.brand-logo-section {
+	.watches-brand-logo {
+		.brand-logo-item {
+			width: 100%;
+			height: 230px;
+			overflow: hidden;
+			text-align: center;
+			border-radius: 3px;
+			margin-bottom: 30px;
+			a {
+				opacity: .5;
+				width: 100%;
+				height: 100%;
+				display: block;
+				line-height: 230px;
+				&:hover {opacity: 1;}
+			}
+		}
+	}
+}
+// brand-logo-section - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.home-watches-1 {
+	.featured-section {
+		.featured-container {
+			.digital-featured-nav {
+				li {
+					a {
+						border-top-left-radius: 3px;
+						border-top-right-radius: 3px;
+					}
+					&:hover {
+						a {color: $gplus-red;}
+					}
+					a.active {color: $gplus-red;}
+				}
+			}
+		}
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// promotion-banner-section - start
+// ==================================================
+.promotion-banner-section {
+	.watches-promotion-banner {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		.container {
+			margin: 0 auto;
+			max-width: 1200px;
+		}
+		.promotion-content {
+			h2 {
+				font-size: 60px;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+			h3 {
+				font-size: 36px;
+				font-weight: 600;
+				text-transform: capitalize;
+			}
+			h4 {
+				font-size: 24px;
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+// promotion-banner-section - end
+// ==================================================
+
+
+
+// popular-section - start
+// ==================================================
+.popular-section {
+
+	.top-rated-watches {
+		.top-rated-watches-carousel {
+			.item {
+
+				.top-rated-item {
+					.image-container {
+						float: left;
+						width: 160px;
+						height: 210px;
+						margin-right: 15px;
+					}
+					.item-content {
+						display: table;
+						.rateing-star {
+							display: table;
+							margin: 0 auto 15px;
+							ul {
+								float: left;
+								margin: 0px;
+								padding: 0px;
+								li {
+									float: left;
+									color: #f3cd1e;
+									list-style: none;
+									margin-right: 2px;
+									display: inline-block;
+								}
+							}
+						}
+
+						.item-title {
+							font-size: 14px;
+							margin-bottom: 5px;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	.new-arrivals {
+		.new-arrivals-carousel {
+			.item {
+				position: relative;
+				.post-labels {
+					top: 15px;
+					left: 15px;
+					position: absolute;
+				}
+				&:hover {
+					.image-container {
+						.absolute-cartview {
+							opacity: 1;
+							transform: translate(-50%,-50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.home-watches-1 {
+	.popular-section {
+		.owl-theme {
+			.owl-nav {
+				top: -77px;
+				right: 0px;
+				position: absolute;
+			}
+		}
+	}
+}
+// popular-section - end
+// ==================================================
+
+
+
+// popular-section (most viewde products) - start
+// ==================================================
+.popular-section {
+	.most-viewde-products {
+		.most-viewde-item {
+			border-radius: 3px;
+			position: relative;
+			.post-labels {
+				top: 15px;
+				left: 15px;
+				position: absolute;
+			}
+		}
+	}
+}
+// popular-section (most viewde products) - end
+// ==================================================
+
+
+
+// police-section - start
+// ==================================================
+.police-section {
+	.watches-police-section {
+		.police-item {
+			padding: 40px 60px;
+			border-radius: 3px;
+			.icon {
+				font-size: 66px;
+				font-weight: 800;
+				margin-bottom: 30px;
+			}
+			h2 {
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+// police-section - end
+// ==================================================
+
+
+
+// footer-section - start
+// ==================================================
+.home-watches-1,
+.home-watches-2 {
+	.footer-section {
+		.footer-title {
+			color: $white-color;
+		}
+
+		.jewellry-footer {
+
+			.footer-newsletter {border-bottom: 1px solid rgba(255,255,255,0.2);}
+
+			.footer-middle {
+				.footer-contact {
+					.contact-info-list {
+						ul {
+							li {
+								color: #cccccc;
+							}
+						}
+					}
+
+					.social-links {
+						ul {
+							li {
+								a {
+									&:hover {
+										background-color: $gplus-red;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.useful-links {
+					ul {
+						li {
+							a {
+								color: #cccccc;
+								&:hover {color: $gplus-red;}
+							}
+						}
+					}
+				}
+
+				.footer-instagram {
+					ul {
+						margin-left: -5px;
+						margin-right: -5px;
+						li {
+							width: 93px;
+							height: 65px;
+							padding: 5px;
+							overflow: hidden;
+							a {
+								width: 100%;
+								height: 100%;
+								display: block;
+								overflow: hidden;
+								position: relative;
+								border-radius: 3px;
+								&:before {
+									top: 0;
+									left: 0;
+									right: 0;
+									bottom: 0;
+									z-index: 1;
+									opacity: 0;
+									content: '';
+									position: absolute;
+									transition: $default-transition;
+									background-color: $overlay-black;
+								}
+								&:hover {
+									&:before {opacity: 1;}
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+// footer-section - end
+// ==================================================
+
+/* home watches 1 - end
+==================================================================================================== */
+
+
+
+
+
+/* home watches 2 - start
+==================================================================================================== */
+
+// some changes here - start
+// ==================================================
+.home-watches-2 {
+
+	::selection {
+		color: $white-color;
+		background: $gplus-red;
+	}
+
+	// form settinge - start
+	.form-item {
+		input {
+			&:focus {
+				border-color: $gplus-red;
+				+.form-item-btn {
+					background-color: $gplus-red;
+				}
+			}
+		}
+	}
+	.form-textarea {
+		margin-bottom: 30px;
+		textarea {
+			&:focus {
+				border-color: $gplus-red;
+			}
+		}
+	}
+	// form settinge - end
+
+	// quick-view - start
+	.quick-view {
+		background-color: rgba(245, 108, 87, .5);
+		&:hover {
+			background-color: rgba(245, 108, 87, 1);
+		}
+	}
+	// quick-view - end
+
+	// post-meta - start
+	.post-meta {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: $gplus-red;
+					}
+				}
+			}
+		}
+	}
+	// post-meta - end
+
+	// owl settings - start
+	.owl-theme {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					&:before {
+						background-color: $gplus-red;
+					}
+				}
+			}
+		}
+		.owl-dots {
+			.owl-dot.active {
+				span {
+					background: $gplus-red;
+				}
+			}
+		}
+	}
+	// owl settings - end
+
+	// plus-effect - start
+	.plus-effect {
+		&:before,
+		&:after {
+			background-color: $gplus-red;
+		}
+	}
+	// plus-effect - end
+
+	// product-item - start
+	.product-item {
+		.item-content {
+			.item-title {
+				&:hover {color: $gplus-red;}
+			}
+		}
+		.hover-content {
+			.add-to-cart {
+				&:hover {
+					border-color: $gplus-red;
+					background-color: $gplus-red;
+				}
+			}
+			.product-meta {
+				ul {
+					li {
+						a {
+							&:hover {color: $gplus-red;}
+						}
+					}
+				}
+			}
+		}
+	}
+	// product-item - end
+
+	// item-title - start
+	.item-title {
+		&:hover {
+			color: $gplus-red;
+		}
+	}
+	// item-title - start
+
+}
+// some changes here - end
+// ==================================================
+
+// slider-section - start
+// ==================================================
+.home-watches-2 {
+	.slider-section {
+		.slider-item {
+			.slider-content {
+				padding: 150px 65px;
+				h1 {
+					font-size: 54px;
+					font-weight: 800;
+					text-transform: uppercase;
+				}
+				h2 {
+					font-size: 30px;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+				p {
+					font-size: 16px;
+					font-weight: 500;
+					text-transform: uppercase;
+					strong {
+						font-size: 24px;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}
+
+.home-watches-2 {
+	.all-departments-menu {
+		background-color: $white-color;
+		>.title-text {
+			width: 100%;
+			height: 50px;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 50px;
+			text-align: center;
+			color: $white-color;
+			text-transform: uppercase;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+		>ul {
+			margin: 0px;
+			padding: 15px;
+			>li {
+				width: 100%;
+				display: table;
+				list-style: none;
+				border-bottom: 1px solid $gray-deep-color;
+				>a {
+					width: 100%;
+					padding: 10px;
+					display: block;
+					font-size: 14px;
+					font-weight: 500;
+				}
+				&:hover {
+					>a {color: $gplus-red;}
+				}
+				&:last-child {border-bottom: none;}
+
+				>.add-new {
+					width: 100%;
+					display: block;
+					font-size: 14px;
+					margin-top: 15px;
+					padding: 10px 15px;
+					border-radius: 3px;
+					text-align: center;
+					background-color: $gray-color;
+					i {margin-right: 5px;}
+					&:hover {
+						color: $white-color;
+						background-color: $gplus-red;
+					}
+				}
+			}
+			>.menu-item-has-children {
+				>a {
+					position: relative;
+					&:after {
+						right: 0;
+						top: 11px;
+						content: '\f054';
+						font-weight: 900;
+						position: absolute;
+						font-family: 'Font Awesome 5 Free';
+					}
+				}
+			}
+
+			.menu-item-has-children.has-mega-menu {
+				position: relative;
+				>.mega-menu {
+					top: 0;
+					left: 240px;
+					opacity: 0;
+					width: 1000px;
+					z-index: 999;
+					height: auto;
+					padding: 15px;
+					visibility: hidden;
+					position: absolute;
+					background-size: cover;
+					background-repeat: no-repeat;
+					transition: $default-transition;
+					background-position: center center;
+					box-shadow: 0px 3px 9px 1px rgba(0,0,0,0.1);
+					>li {
+						width: 25%;
+						float: left;
+						margin: 0px;
+						padding: 15px;
+						display: inline-block;
+						.title-text {
+							width: 100%;
+							display: table;
+							font-size: 18px;
+							font-weight: 600;
+							text-transform: uppercase;
+						}
+						>.menu-item-list {
+							padding: 0px;
+							>li {
+								width: 100%;
+								display: table;
+								margin-bottom: 8px;
+								&:last-child {margin-bottom: 0px;}
+								>a {
+									font-size: 16px;
+									font-weight: 400;
+									color: $body-color;
+									text-transform: capitalize;
+									&:hover {
+										color: $gplus-red;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.mega-menu {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+
+			}
+		}
+	}
+}
+// slider-section - end
+// ==================================================
+
+
+
+// police-section - start
+// ==================================================
+.police-section {
+	.watches-2-police-section {
+
+		.police-item {
+			padding: 15px;
+			border-radius: 3px;
+			border: 2px solid $gray-deep-color;
+			.icon {
+				float: left;
+				width: 80px;
+				height: 80px;
+				font-size: 72px;
+				line-height: 80px;
+				text-align: center;
+				margin-right: 15px;
+			}
+			.item-content {
+				display: table;
+				.title-text {
+					font-size: 18px;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+// police-section - end
+// ==================================================
+
+
+
+// category-section - start
+// ==================================================
+.home-watches-2 {
+	.category-section {
+		.bicycle-2-category {
+			.category-item {
+				.item-title {
+					font-size: 18px;
+					&:hover {color: $gplus-red;}
+				}
+			}
+		}
+	}
+}
+// category-section - end
+// ==================================================
+
+
+
+// new arrivals - start
+// ==================================================
+.home-watches-2 {
+	.popular-section {
+		.new-arrivals {
+			.owl-theme {
+				.owl-nav {
+					top: -77px;
+					right: 0px;
+					position: absolute;
+				}
+			}
+		}
+	}
+}
+// new arrivals - end
+// ==================================================
+
+
+
+// latest-post-section - start
+// ==================================================
+.home-watches-2 {
+	.latest-post-section {
+		.latest-post-list {
+			ul {
+				.post-item {
+					.item-image {
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+}
+// latest-post-section - end
+// ==================================================
+
+
+
+// sidebar-section - start
+// ==================================================
+.home-watches-2 {
+	.sidebar-section {
+
+		.deal-item {
+			.item-content {
+				.progress {
+					.progress-bar {
+						background-color: $heading-color;
+					}
+				}
+			}
+		}
+
+		.popular-products {
+			ul {
+				li {
+					width: 100%;
+					display: table;
+					.product-image {height: auto;}
+					&:hover {
+						.product-content {
+							.product-title {color: $gplus-red;}
+						}
+					}
+				}
+			}
+		}
+
+		.sidebar-item {
+			.promotion-item {
+				.promotion-img {
+					img {
+						width: 100%;
+						display: block;
+					}
+				}
+			}
+		}
+
+	}
+}
+// sidebar-section - end
+// ==================================================
+
+/* home watches 2 - end
+==================================================================================================== */

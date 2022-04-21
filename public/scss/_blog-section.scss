@@ -1,0 +1,509 @@
+/* blog section - start
+==================================================================================================== */
+.blog-section {
+
+	// home digital 2 - start
+	.blog-grid-item {
+		.blog-image {
+			overflow: hidden;
+			border-radius: 3px;
+			position: relative;
+			img {
+				transform: scale(1);
+				transition: $default-transition;
+			}
+			.post-date {
+				top: 15px;
+				left: 15px;
+				padding: 15px 10px;
+				border-radius: 3px;
+				position: absolute;
+				span {
+					width: 100%;
+					display: table;
+					font-size: 16px;
+					font-weight: 500;
+					margin-bottom: 5px;
+					color: $white-color;
+				}
+				strong {
+					width: 100%;
+					display: table;
+					font-size: 14px;
+					font-weight: 600;
+					color: $white-color;
+					text-transform: uppercase;
+				}
+			}
+
+			.blog-category-tag {
+				top: 15px;
+				left: 15px;
+				z-index: 1;
+				font-size: 14px;
+				padding: 8px 16px;
+				border-radius: 3px;
+				position: absolute;
+				color: $white-color;
+			}
+		}
+		.blog-content {
+			padding: 15px;
+			.blog-tags {
+				margin-bottom: 10px;
+				ul {
+					li {
+						a {
+							font-size: 14px;
+							font-weight: 500;
+							color: $body-color;
+							text-transform: uppercase;
+							&:hover {
+								color: $past-color;
+							}
+						}
+					}
+				}
+			}
+
+			.blog-title {
+				width: 100%;
+				display: block;
+				font-size: 18px;
+				font-weight: 600;
+				margin-bottom: 15px;
+				&:hover {
+					color: $past-color;
+				}
+			}
+		}
+		&:hover {
+			.blog-image {
+				img {transform: scale(1.1);}
+				.plus-effect {opacity: 1;}
+			}
+		}
+	}
+	// home digital 2 - end
+
+	// home food 2 - start
+	.blog-grid-item-2 {
+		.blog-image {
+			padding: 5px;
+			overflow: hidden;
+			border-radius: 3px;
+			background-color: $gray-color;
+			border: 1px solid $gray-deep-color;
+			.image-container {
+				.post-date {
+					top: 15px;
+					z-index: 1;
+					left: 15px;
+					width: 80px;
+					height: 80px;
+					padding: 17px;
+					position: absolute;
+					color: $white-color;
+					border-radius: 100%;
+					border: 5px solid $white-color;
+					strong {
+						width: 100%;
+						display: table;
+						font-size: 18px;
+						font-weight: 600;
+						margin-bottom: 5px;
+					}
+					span {
+						width: 100%;
+						display: table;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+		.blog-content {
+			padding-top: 30px;
+			position: relative;
+			.tag {
+				left: 50%;
+				top: -23px;
+				font-size: 14px;
+				padding: 5px 15px;
+				position: absolute;
+				text-align: center;
+				border-radius: 3px;
+				color: $white-color;
+				transform: translateX(-50%);
+			}
+			.blog-title {
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+				border-bottom: 1px solid $gray-deep-color;
+			}
+		}
+
+		&:hover {
+			.blog-content {
+				.blog-title {
+					color: $past-color;
+				}
+			}
+		}
+	}
+	// home food 2 - end
+
+	// home furniture 2 - start
+	.blog-3-item-list {
+		width: 100%;
+		display: table;
+		.blog-grid-item-3 {
+			float: left;
+			width: 33.3339%;
+			position: relative;
+			display: inline-block;
+			background-color: $white-color;
+			&:before {
+				top: 51.35%;
+				left: 46%;
+				z-index: 1;
+				content: '';
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				background-color: $white-color;
+				transform: rotate(45deg) translateX(-46%) translateY(-51.39%);
+			}
+			.blog-image {
+				width: 100%;
+				height: 254px;
+				overflow: hidden;
+				position: relative;
+				&:before {
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					opacity: 0;
+					content: '';
+					position: absolute;
+					transition: $default-transition;
+					background-color: $overlay-black;
+				}
+			}
+			.blog-content {
+				width: 100%;
+				height: 254px;
+				padding: 26px 30px;
+				.post-date {
+					font-size: 14px;
+					font-weight: 400;
+					color: $body-color;
+					text-transform: uppercase;
+				}
+				.post-meta {
+					margin-top: 15px;
+					padding-top: 15px;
+					border-top: 1px solid $gray-deep-color;
+				}
+			}
+
+			&:hover {
+				.blog-image {
+					&:before {opacity: 1;}
+				}
+				.blog-content {
+					.blog-title {color: $past-color;}
+				}
+			}
+		}
+	}
+	// home furniture 2 - end
+
+	// home jewellry 1 - start
+	.blog-grid-item-4 {
+		.blog-content-1 {
+			.blog-title {
+				font-size: 18px;
+				margin-bottom: 5px;
+				&:hover {color: $gold-color;}
+			}
+		}
+		.blog-image {
+			overflow: hidden;
+			position: relative;
+			img {
+				transform: scale(1);
+				transition: $default-transition;
+			}
+			.pin {
+				top: 10px;
+				left: 10px;
+				z-index: 1;
+				font-size: 14px;
+				font-weight: 500;
+				padding: 5px 15px;
+				position: absolute;
+				color: $white-color;
+				text-transform: uppercase;
+			}
+		}
+		.blog-content-2 {
+			.blog-links {
+				>ul {
+					>li {
+						margin-right: 40px;
+						&:last-child {margin-right: 0px;}
+						>a {
+							font-size: 14px;
+							font-weight: 600;
+							&:hover {color: $gold-color;}
+						}
+						.share-links {
+							li {
+								width: 30px;
+								height: 30px;
+								overflow: hidden;
+								margin-right: 5px;
+								text-align: center;
+								border-radius: 100%;
+								&:last-child {margin-right: 0px;}
+								a {
+									width: 100%;
+									height: 100%;
+									display: block;
+									font-size: 14px;
+									font-weight: 400;
+									line-height: 30px;
+									text-align: center;
+									color: $heading-color;
+									background-color: $gray-deep-color;
+									&:hover {
+										color: $white-color;
+										background-color: $gold-color;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&:hover {
+			.blog-image {
+				img {transform: scale(1.1);}
+			}
+		}
+	}
+	// home jewellry 1 - end
+
+	// home tools 2 - start
+	.blog-grid-item-5 {
+		.blog-image {
+			overflow: hidden;
+			position: relative;
+			.social-links {
+				left: 50%;
+				bottom: 0px;
+				display: table;
+				padding: 8px 16px;
+				position: absolute;
+				transform: translateX(-50%);
+				background-color: $overlay-black;
+				.like-btn {
+					float: left;
+					font-size: 14px;
+					font-weight: 400;
+					margin-right: 50px;
+					position: relative;
+					color: $white-color;
+					&:hover {color: $navy-blue;}
+					&:before {
+						top: 0;
+						bottom: 0;
+						width: 1px;
+						content: '';
+						right: -25px;
+						position: absolute;
+						background-color: $overlay-white;
+					}
+				}
+				ul {
+					li {
+						margin-right: 15px;
+						&:last-child {margin-right: 0px;}
+						a {
+							font-size: 14px;
+							font-weight: 400;
+							color: $white-color;
+							&:hover {color: $navy-blue;}
+						}
+					}
+				}
+			}
+		}
+		.blog-content {
+			.tag-date {
+				ul {
+					li {
+						font-size: 14px;
+						font-weight: 600;
+						position: relative;
+						padding-right: 15px;
+						&:after {
+							top: 50%;
+							right: 2px;
+							content: '-';
+							color: $body-color;
+							position: absolute;
+							transform: translateY(-50%);
+						}
+						&:last-child {
+							padding-right: 0px;
+							&:after {display: none;}
+						}
+						a {
+							font-size: 14px;
+							font-weight: 600;
+							&:hover {color: $navy-blue;}
+						}
+					}
+				}
+			}
+			.blog-title {
+				font-size: 16px;
+				&:hover {color: $navy-blue;}
+			}
+			.read-more {
+				color: $navy-blue;
+				&:hover {text-decoration: underline;}
+			}
+		}
+	}
+	// home tools 2 - end
+
+	// blog-big-item - start
+	.blog-big-item {
+		.blog-title {
+			.title-text {
+				font-size: 18px;
+				margin-bottom: 15px;
+				text-transform: uppercase;
+			}
+			.post-meta {
+				ul {
+					li {
+						color: $body-color;
+					}
+				}
+			}
+		}
+		.blog-content {
+			.read-more {
+				padding: 15px 45px;
+				text-align: center;
+				color: $white-color;
+				border-radius: 30px;
+				background-color: $past-color;
+			}
+		}
+	}
+	// blog-big-item - end
+
+}
+/* blog section - end
+==================================================================================================== */
+
+
+
+
+
+/* blog details page - start
+==================================================================================================== */
+.blog-section {
+	.blog-details {
+		margin-bottom: 60px;
+		padding-bottom: 60px;
+		border-bottom: 1px solid $gray-deep-color;
+		.blog-title {
+			.title-text {
+				font-size: 24px;
+				margin-bottom: 15px;
+				text-transform: uppercase;
+			}
+			.post-meta {
+				ul {
+					li {
+						color: $body-color;
+					}
+				}
+			}
+		}
+
+		.blockquote {
+			padding: 0px 30px;
+			p {
+				font-size: 16px;
+				font-style: italic;
+				i {
+					font-size: 36px;
+					color: $past-color;
+				}
+			}
+		}
+	}
+
+	.blog-review {
+		margin-bottom: 60px;
+		padding-bottom: 60px;
+		border-bottom: 1px solid $gray-deep-color;
+		.review-item {
+			margin-bottom: 30px;
+			&:last-child {margin-bottom: 0px;}
+			.reviewer-img {
+				float: left;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+				margin-right: 15px;
+				text-align: center;
+				position: relative;
+				border-radius: 100%;
+				color: $gray-deep-color;
+				background-color: $gray-color;
+				&:before {
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					font-size: 42px;
+					content: '\f007';
+					font-weight: 900;
+					line-height: 100px;
+					position: absolute;
+					color: $white-color;
+					font-family: 'Font Awesome 5 Free';
+				}
+			}
+			.review-content {
+				display: table;
+				padding: 23px 0px;
+				.post-meta {
+					margin-bottom: 5px;
+					ul {
+						li {
+							font-size: 14px;
+							font-weight: 500;
+							a {
+								font-size: 16px;
+								font-weight: 600;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* blog details page - end
+==================================================================================================== */

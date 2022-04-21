@@ -1,0 +1,81 @@
+/* about page - start
+==================================================================================================== */
+// about-section - start
+// ==================================================
+.about-section {
+	.about-image {
+		width: 50%;
+		float: left;
+		overflow: hidden;
+	}
+	.about-content {
+		width: 570px;
+		display: table;
+		text-align: center;
+		padding: 177px 30px;
+	}
+}
+// about-section - end
+// ==================================================
+
+
+
+// funfact-section - start
+// ==================================================
+.funfact-section {
+	.funfact-item {
+		.icon {
+			font-size: 66px;
+			color: $past-color;
+			margin-bottom: 5px;
+		}
+		h2 {
+			font-size: 42px;
+			font-weight: 600;
+			margin-bottom: 0px;
+		}
+		small {
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+	}
+}
+// funfact-section - end
+// ==================================================
+
+
+
+// team-section - start
+// ==================================================
+.team-section {
+
+	.section-title {
+		padding: 0px;
+		border-bottom: none;
+		margin-bottom: 60px;
+		h2 {
+			font-size: 30px;
+		}
+	}
+
+	.team-member {
+		.image-container {
+			padding: 3px;
+			border-radius: 3px;
+			border: 2px solid $gray-deep-color;
+		}
+
+		.member-content {
+			padding: 15px;
+			.member-name {
+				font-size: 16px;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+// team-section - end
+// ==================================================
+/* about page - end
+==================================================================================================== */

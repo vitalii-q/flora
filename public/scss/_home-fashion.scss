@@ -1,0 +1,1183 @@
+/* home fashion 1 - start
+==================================================================================================== */
+// some changes - start
+// ==================================================
+.home-fashion-1 {
+
+	::selection {color: $gplus-red;}
+
+	// form settinge - start
+	.form-item {
+		input {
+			&:focus {
+				border-color: $gplus-red;
+				+.form-item-btn {
+					background-color: $gplus-red;
+				}
+			}
+		}
+	}
+	.form-textarea {
+		margin-bottom: 30px;
+		textarea {
+			&:focus {
+				border-color: $gplus-red;
+			}
+		}
+	}
+	// form settinge - end
+
+	// quick-view - start
+	.quick-view {
+		background-color: rgba(245, 108, 87, .5);
+		&:hover {
+			color: $white-color;
+			background-color: rgba(245, 108, 87, 1);
+		}
+	}
+	// quick-view - end
+
+	// post-meta - start
+	.post-meta {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: $gplus-red;
+					}
+				}
+			}
+		}
+	}
+	// post-meta - end
+
+	// owl settings - start
+	.owl-theme {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					&:before {
+						background-color: $gplus-red;
+					}
+				}
+			}
+		}
+		.owl-dots {
+			.owl-dot.active {
+				span {
+					background: $gplus-red;
+				}
+			}
+		}
+	}
+	// owl settings - end
+
+	// plus-effect - start
+	.plus-effect {
+		&:before,
+		&:after {
+			background-color: $gplus-red;
+		}
+	}
+	// plus-effect - end
+
+	// product-item - start
+	.product-item {
+		.item-content {
+			.item-title {
+				&:hover {color: $gplus-red;}
+			}
+		}
+		.hover-content {
+			.add-to-cart {
+				&:hover {
+					border-color: $gplus-red;
+					background-color: $gplus-red;
+				}
+			}
+			.product-meta {
+				ul {
+					li {
+						a {
+							&:hover {color: $gplus-red;}
+						}
+					}
+				}
+			}
+		}
+	}
+	// product-item - end
+
+	// item-title - start
+	.item-title {
+		&:hover {
+			color: $gplus-red;
+		}
+	}
+	// item-title - start
+
+}
+// some changes - end
+// ==================================================
+
+
+
+// slider-section - start
+// ==================================================
+.home-fashion-1 {
+	.slider-section {
+		.slider-item {
+			padding: 150px 0px;
+			.slider-content {
+				h1 {
+					font-size: 72px;
+					font-weight: 800;
+					text-transform: uppercase;
+				}
+				h2 {
+					font-size: 36px;
+					font-weight: 600;
+					text-transform: uppercase;
+					strong {
+						font-size: 48px;
+						font-weight: 800;
+					}
+				}
+				h3 {
+					font-size: 24px;
+					font-weight: 500;
+					color: $body-color;
+				}
+			}
+		}
+	}
+}
+// slider-section - end
+// ==================================================
+
+
+
+// promotion-section - start
+// ==================================================
+.promotion-section {
+	.fashion-promotion-masonry {
+		width: 100%;
+		padding: 10px;
+		display: table;
+		.grid-sizer,
+		.grid-item {
+			float: left;
+			width: 470px;
+			height: 350px;
+			padding: 10px;
+			overflow: hidden;
+			position: relative;
+			border-radius: 3px;
+			text-align: center;
+			display: inline-block;
+			.image-container {
+				width: 100%;
+				height: 100%;
+				display: block;
+				img {
+					transform: scale(1);
+					transition: $default-transition;
+				}
+			}
+
+			.item-content {
+				top: 10px;
+				padding: 30px;
+				text-align: left;
+				position: absolute;
+				h2 {
+					font-size: 24px;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+				h3 {
+					margin: 0px;
+					font-size: 18px;
+					font-weight: 500;
+					text-transform: uppercase;
+				}
+				strong {
+					font-size: 36px;
+					font-weight: 800;
+					color: $heading-color;
+					text-transform: uppercase;
+				}
+			}
+			.item-content.content-left {left: 10px;}
+			.item-content.content-right {right: 10px;}
+			&:hover {
+				.image-container {
+					width: 100%;
+					height: 100%;
+					display: block;
+					img {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+
+		.grid-height {height: 700px;}
+		.grid-square {height: 350px;}
+	}
+}
+// promotion-section - end
+// ==================================================
+
+
+
+// category-section - start
+// ==================================================
+.category-section {
+	.fashion-category-list {
+		ul {
+			margin: 0px;
+			padding: 0px;
+			li {
+				float: left;
+				height: auto;
+				width: 11.11111%;
+				list-style: none;
+				padding: 0px 30px;
+				display: inline-block;
+				a {
+					.icon {
+						font-size: 72px;
+						font-weight: 500;
+						margin-bottom: 20px;
+						color: $heading-color;
+						transition: $default-transition;
+					}
+					.title {
+						width: 100%;
+						display: table;
+						font-size: 16px;
+						font-weight: 600;
+						color: $body-color;
+						text-transform: uppercase;
+						transition: $default-transition;
+					}
+					&:hover {
+						.icon {color: $gplus-red;}
+						.title {color: $gplus-red;}
+					}
+				}
+			}
+		}
+	}
+}
+// category-section - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.home-fashion-1 {
+	.featured-section {
+		.featured-container {
+			.digital-featured-nav {
+				li {
+					a {
+						&:hover {
+							color: $gplus-red;
+						}
+					}
+					a.active {
+						color: $gplus-red;
+					}
+				}
+			}
+		}
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// storm-product-section - start
+// ==================================================
+.storm-product-section {
+	.ourproducts-tab {
+		position: relative;
+		.nav {
+			right: 0;
+			top: -75px;
+			z-index: 1;
+			position: absolute;
+			li {
+				width: auto;
+				height: 45px;
+				a {
+					width: 100%;
+					height: 100%;
+					display: block;
+					padding: 0px 30px;
+					line-height: 45px;
+					text-align: center;
+					border-top-left-radius: 3px;
+					border-top-right-radius: 3px;
+					border: 1px solid transparent;
+					&:hover {color: $gplus-red;}
+				}
+				.active {
+					color: $gplus-red;
+					border-color: $gray-deep-color;
+					border-bottom-color: $white-color;
+				}
+			}
+		}
+		.tab-content {
+			.tab-pane {
+				.storm-product-masonry {
+					width: 100%;
+					display: table;
+					margin-left: -15px;
+					margin-right: -15px;
+					.grid-sizer,
+					.grid-item {
+						width: 25%;
+						float: left;
+						height: auto;
+						padding: 15px;
+						position: relative;
+						text-align: center;
+						border-radius: 3px;
+						display: inline-block;
+						.post-labels {
+							top: 20px;
+							left: 20px;
+							position: absolute;
+						}
+						&:hover {
+							.absolute-cartview {
+								opacity: 1;
+								transform: translate(-50%,-50%);
+							}
+						}
+					}
+					.grid-item-big {
+						width: 50%;
+						.image-container {
+							.count-down {
+								left: 50%;
+								bottom: 30px;
+								display: table;
+								position: absolute;
+								transform: translateX(-50%);
+							}
+						}
+						.deal-label {
+							top: 12px;
+							left: 12px;
+						}
+					}
+				}
+
+				.op-item {
+					position: relative;
+					border-radius: 3px;
+					margin-bottom: 30px;
+					.post-labels {
+						top: 20px;
+						left: 20px;
+						position: absolute;
+					}
+					&:hover {
+						.absolute-cartview {
+							opacity: 1;
+							transform: translate(-50%,-50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// storm-product-section - end
+// ==================================================
+
+
+// blog-section - start
+// ==================================================
+// -->> _blog-section.scss -> .blog-grid-item
+.home-fashion-1 {
+	.blog-section {
+		.blog-grid-item {
+			.blog-content {
+				padding: 0px;
+				.blog-title {
+					&:hover {
+						color: $gplus-red;
+					}
+				}
+				.post-meta {
+					ul {
+						li {
+							a {
+								&:hover {
+									color: $gplus-red;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// blog-section - end
+// ==================================================
+
+
+
+// newsletter-section - start
+// ==================================================
+// -->> _newsletter-section.scss >> .newsletter-content
+// newsletter-section - end
+// ==================================================
+
+/* home fashion 1 - end
+==================================================================================================== */
+
+
+
+
+
+/* home fashion 2 - start
+==================================================================================================== */
+// some changes here - start
+// ==================================================
+.home-fashion-2 {
+	position: relative;
+	.container-fluid {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+// some changes here - end
+// ==================================================
+
+
+
+// fashion2-left-body - start
+// ==================================================
+.fashion2-left-body {
+	top: 0;
+	left: 0;
+	float: left;
+	bottom: 0px;
+	z-index: 999;
+	max-width: 20%;
+	position: fixed;
+	// overflow-y: scroll;
+	padding: 60px 30px;
+	background-color: $white-color;
+	border-right: 1px solid $gray-deep-color;
+
+	// group-btn - start
+	.group-btn {
+		ul {
+			li {
+				margin-right: 20px;
+				position: relative;
+				&:last-child {
+					margin-right: 0px;
+				}
+				>button {
+					font-size: 18px;
+					position: relative;
+					.item-counter {
+						right: -8px;
+						bottom: -2px;
+						width: 20px;
+						height: 20px;
+						font-size: 12px;
+						line-height: 20px;
+						position: absolute;
+						text-align: center;
+						border-radius: 100%;
+					}
+				}
+				.search-body {
+					top: 45px;
+					left: -65px;
+					opacity: 0;
+					width: 300px;
+					height: auto;
+					z-index: 999;
+					border-radius: 3px;
+					position: absolute;
+					visibility: hidden;
+					transition: $default-transition;
+					box-shadow: 0px 3px 9px 1px rgba(0,0,0,0.1);
+					.search-form {
+						width: 100%;
+						height: auto;
+						position: relative;
+						.search-input {
+							width: 100%;
+							height: 50px;
+							padding: 0px 20px;
+							border-radius: 3px;
+							border: 1px solid $gray-deep-color;
+							&:focus {
+								outline: none;
+								border-color: $past-color;
+							}
+						}
+						.search-close {
+							top: 50%;
+							z-index: 1;
+							right: 5px;
+							width: 40px;
+							height: 40px;
+							cursor: pointer;
+							line-height: 40px;
+							text-align: center;
+							position: absolute;
+							border-radius: 3px;
+							color: $white-color;
+							transform: translateY(-50%);
+							background-color: $past-color;
+						}
+					}
+				}
+				.search-open {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+	// group-btn - end
+
+	// main-menu - start
+	.main-menu {
+		.main-menu-list {
+			margin-left: -30px;
+			margin-right: -30px;
+			>ul {
+				>li {
+					>a {
+						width: 100%;
+						display: block;
+						font-size: 14px;
+						padding: 15px 30px;
+						border-bottom: 1px solid $gray-deep-color;
+					}
+					&:hover {
+						>a {
+							color: $past-color;
+							background-color: $gray-color;
+						}
+					}
+				}
+				>.active {
+					>a {
+						color: $past-color;
+						background-color: $gray-color;
+					}
+				}
+
+				>.menu-item-has-children {
+					position: relative;
+					>a {
+						position: relative;
+						&:after {
+							top: 50%;
+							right: 30px;
+							font-size: 14px;
+							font-weight: 900;
+							content: '\f105';
+							position: absolute;
+							color: $heading-color;
+							transform: translateY(-50%);
+							transition: $default-transition;
+							font-family: 'Font Awesome 5 Free';
+						}
+					}
+					>.sub-menu {
+						top: 0;
+						left: 489px;
+						width: 280px;
+						>.menu-item-has-children {
+							>.sub-menu {
+								top: 0;
+								left: 420px;
+								width: 280px;
+							}
+						}
+					}
+				}
+
+				>.menu-item-has-children.has-mega-menu {
+					>.mega-menu,
+					>.demo-list {
+						top: 0;
+						left: 350px;
+						width: 950px;
+					}
+				}
+
+			}
+		}
+	}
+	// main-menu - end
+
+	// three-btn-group - start
+	.three-btn-group {
+		li {
+			font-size: 14px;
+			margin-bottom: 15px;
+			&:last-child {margin-bottom: 0px;}
+			a {
+				display: table;
+				font-size: 14px;
+				font-weight: 400;
+			}
+			select {
+				border: none;
+			}
+		}
+	}
+	// three-btn-group - end
+
+	.footer-area {
+		ul {
+			li {
+				width: 40px;
+				height: 40px;
+				overflow: hidden;
+				margin-right: 10px;
+				border-radius: 100%;
+				&:last-child {margin-right: 0px;}
+				a {
+					width: 100%;
+					height: 100%;
+					display: block;
+					line-height: 40px;
+					background-color: $gray-color;
+					&:hover {
+						color: $white-color;
+						background-color: $past-color;
+					}
+				}
+			}
+		}
+	}
+}
+.fashion2-left-body::-webkit-scrollbar {width: 0px;}
+
+.cart-items-sidebar,
+.wishlist-items-sidebar {
+	display: block;
+	position: relative;
+	#cart-sidebar,
+	#wishlist-sidebar {
+		top: 0;
+		bottom: 0;
+		left: -360px;
+		height: 100%;
+		z-index: 9999;
+		position: fixed;
+		min-width: 350px;
+		max-width: 350px;
+		overflow-y: scroll;
+		padding-bottom: 100px;
+		background-color: $white-color;
+		transition: $default-transition;
+		.mCustomScrollBox {overflow: visible!important;}
+	}
+
+	#cart-sidebar.active,
+	#wishlist-sidebar.active {left: 0px;}
+	.overlay {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		z-index: 998;
+		display: none;
+		position: fixed;
+		background: rgba(0, 0, 0, 0.8);
+		transition: $default-transition;
+	}
+	.overlay.active {
+		opacity: 1;
+		display: block;
+	}
+	.dismiss {
+		top: 10px;
+		right: 30px;
+		font-size: 18px;
+		cursor: pointer;
+		position: absolute;
+		line-height: normal;
+		color: $white-color;
+	}
+
+	// sidebar items style - start
+	#wishlist-sidebar {
+		box-shadow: 3px 0 9px 1px rgba(0,0,0,0.1);
+
+		.sidebar-title {
+			margin: 0px;
+			font-size: 16px;
+			text-align: left;
+			font-weight: 500;
+			padding: 15px 30px;
+			color: $white-color;
+			text-transform: uppercase;
+		}
+
+		.wishlist-items-container.no-items {
+			padding: 30px;
+			.empty-text {
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 30px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+		}
+
+	}
+	// sidebar items style - end
+}
+
+
+
+.cart-items-sidebar {
+	#cart-sidebar {
+
+		.sidebar-title {
+			margin: 0px;
+			font-size: 16px;
+			text-align: left;
+			font-weight: 500;
+			padding: 15px 30px;
+			color: $white-color;
+			text-transform: uppercase;
+		}
+
+		.cart-items-container {
+			padding: 30px;
+			.title-text {
+				font-size: 18px;
+				font-weight: 600;
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+				text-transform: uppercase;
+				border-bottom: 1px solid $gray-deep-color;
+			}
+
+			.cart-item {
+				margin-bottom: 30px;
+				.image-container {
+					float: left;
+					width: 100px;
+					height: auto;
+					margin-right: 15px;
+				}
+				.item-content {
+					display: table;
+					.item-title {
+						font-size: 16px;
+						font-weight: 600;
+						text-transform: uppercase;
+					}
+					.item-price {
+						strong {
+							font-size: 18px;
+						}
+					}
+					>ul {
+						width: 100%;
+						margin: 0px;
+						padding: 0px;
+						display: table;
+						>li {
+							float: left;
+							padding: 0px;
+							list-style: none;
+							margin-right: 5px;
+							display: inline-block;
+							&:last-child {margin-right: 0px;}
+							.quantity-input {
+								width: 60px;
+								height: 35px;
+								padding: 0px 10px;
+								text-align: center;
+								border-radius: 30px;
+								border: 1px solid $gray-color;
+								background-color: $gray-color;
+								&:focus {outline: none;}
+							}
+							button {
+								width: 35px;
+								height: 35px;
+								font-size: 14px;
+								line-height: 35px;
+								text-align: center;
+								font-weight: normal;
+								border-radius: 100%;
+								background-color: $gray-color;
+								&:hover {
+									color: $white-color;
+									background-color: $past-color;
+								}
+							}
+						}
+					}
+				}
+			}
+			.footer-container {
+				.total-price {
+					font-size: 18px;
+					font-weight: 500;
+					padding-top: 15px;
+					margin-bottom: 15px;
+					text-transform: uppercase;
+					border-top: 1px solid $gray-deep-color;
+					strong {font-weight: 600;}
+				}
+				.footer-btns-group {
+					>ul {
+						>li {
+							padding: 0px;
+							margin-right: 5px;
+							&:last-child {margin-right: 0px;}
+							>a {
+								height: 40px;
+								font-size: 14px;
+								line-height: 40px;
+								padding: 0px 30px;
+								text-align: center;
+								border-radius: 3px;
+								color: $heading-color;
+								background-color: $gray-color;
+								&:hover {
+									color: $white-color;
+									background-color: $past-color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+
+#cart-sidebar::-webkit-scrollbar {width: 0px;}
+#wishlist-sidebar::-webkit-scrollbar {width: 0px;}
+// fashion2-left-body - end
+// ==================================================
+
+
+
+// fashion2-right-body - start
+// ==================================================
+.fashion2-right-body {
+	float: right;
+	width: 81.66%;
+}
+// fashion2-right-body - end
+// ==================================================
+
+
+
+// slider-section - start
+// ==================================================
+.home-fashion-2 {
+	.slider-section {
+		.slider-item {
+			padding: 220px 0px;
+			.slider-content {
+				h1 {
+					font-size: 114px;
+					font-weight: 800;
+					text-transform: uppercase;
+				}
+				h2 {
+					font-size: 66px;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+				h3 {
+					font-size: 60px;
+					font-weight: 500;
+					text-transform: uppercase;
+				}
+				h4 {
+					font-size: 30px;
+					font-weight: 500;
+				}
+				p {font-size: 16px;}
+			}
+		}
+	}
+}
+// slider-section - end
+// ==================================================
+
+
+
+// promotion-section - start
+// ==================================================
+.home-fashion-2 {
+	.promotion-section {
+		padding: 30px 0px;
+		.promotion-item {
+			overflow: hidden;
+			border-radius: 3px;
+			position: relative;
+			img {
+				transform: scale(1);
+				transition: $default-transition;
+			}
+			.promotion-content {
+				top: 0;
+				left: 0;
+				z-index: 1;
+				padding: 30px;
+				position: absolute;
+				h2 {
+					font-size: 48px;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+				h3 {
+					font-size: 36px;
+					font-weight: 500;
+					text-transform: uppercase;
+				}
+				p {
+					font-size: 18px;
+					font-weight: 500;
+					text-transform: uppercase;
+				}
+			}
+			&:hover {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+// promotion-section - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.home-fashion-2 {
+	.featured-section {
+		.featured-container {
+			.tab-content {
+				.tab-pane {
+					.product-item {
+						.image-container {
+							img {
+								width: 100%;
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// category-section - start
+// ==================================================
+.category-section {
+	.fashion2-hot-category {
+		.category-item {
+			overflow: hidden;
+			border-radius: 3px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			.category-content {
+				z-index: 1;
+				width: 100%;
+				padding: 30px;
+				display: table;
+				background-color: rgba(255,255,255,0.5);
+				ul {
+					margin: 0px;
+					padding: 0px;
+					margin-bottom: 15px;
+					li {
+						width: 100%;
+						display: table;
+						list-style: none;
+						margin-bottom: 5px;
+						a {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// category-section - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.featured-section {
+	.fashion-2-masonry {
+		margin-left: -15px;
+		margin-right: -15px;
+		.grid-sizer,
+		.grid-item {
+			width: 20%;
+			float: left;
+			padding: 15px;
+			display: inline-block;
+			.image-container {
+				height: 325px;
+				img {
+					width: 100%;
+					display: block;
+				}
+			}
+		}
+		.grid-item-big {
+			width: 40%;
+			.image-container {
+				height: auto;
+				img {
+					width: 100%;
+					height: 100%;
+					display: block;
+				}
+			}
+		}
+		.grid-item-width {width: 40%;}
+
+		.product-item {
+			margin: 0px;
+			.post-labels {
+				top: 20px;
+				left: 20px;
+			}
+			.item-content {
+				padding: 15px;
+				.item-title {font-size: 14px;}
+			}
+		}
+
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// newsletter-section - start
+// ==================================================
+.home-fashion-2 {
+	.newsletter-section {
+		.newsletter-content {
+			.form-item {
+				.form-item-btn {
+					color: $white-color;
+					background: $past-color;
+				}
+			}
+		}
+	}
+}
+// newsletter-section - end
+// ==================================================
+
+
+
+// brand-logo-section - start
+// ==================================================
+.home-fashion-2 {
+	.brand-logo-section {
+		.digital-brandlogo {
+			.owl-theme {
+				.owl-nav {
+					.owl-prev,
+					.owl-next {
+						&:hover{
+							&:before {
+								background: $past-color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// brand-logo-section - end
+// ==================================================
+
+
+
+// footer-section - start
+// ==================================================
+.home-fashion-2 {
+	.footer-section {
+		.fashion-footer {
+			.footer-middle {
+				.footer-contact {
+					.social-links {
+						ul {
+							li {
+								a {
+									&:hover {
+										color: $white-color;
+										background-color: $past-color;
+									}
+								}
+							}
+						}
+					}
+				}
+				.useful-links {
+					ul {
+						li {
+							a {
+								&:hover {
+									color: $past-color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// footer-section - end
+// ==================================================
+
+/* home fashion 2 - end
+==================================================================================================== */

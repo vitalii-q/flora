@@ -1,0 +1,131 @@
+@extends('admin.layouts.admin_hf')
+
+@section('title', 'Создание adfox')
+
+@section('css')
+    <link rel="stylesheet" href="{{  URL::asset('js/plugins/summernote/summernote-bs4.css') }}">
+    <link rel="stylesheet" href="{{  URL::asset('js/plugins/simplemde/simplemde.min.css') }}">
+@endsection
+
+@section('js')
+    <script src="{{  URL::asset('js/plugins/summernote/summernote-bs4.min.js') }}"></script>
+    <script src="{{ URL::asset('js/plugins/ckeditor/ckeditor.js') }}"></script>
+    <script src="{{ URL::asset('js/plugins/simplemde/simplemde.min.js') }}"></script>
+    <script>jQuery(function(){ Codebase.helpers(['summernote', 'ckeditor', 'simplemde']); });</script>
+@endsection
+
+@section('content')
+    <!-- Main Container -->
+    <main id="main-container">
+        <!-- Page Content -->
+        <div class="content">
+            <nav class="breadcrumb bg-white push">
+                <span class="breadcrumb-item active"><strong>Меню</strong></span>
+                <a class="breadcrumb-item" href="{{ route('adfox.index') }}">Рекламные adfox</a>
+                <span class="breadcrumb-item active">Создание</span>
+            </nav>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Default Elements -->
+                    <div class="block">
+                        <div class="block-header block-header-default">
+                            <h3 class="block-title">Создание adfox</h3>
+                            <div class="block-options">
+                                <button type="button" class="btn-block-option">
+                                    <i class="si si-wrench"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="block-content">
+                            <form action="{{ route('adfox.store') }}" method="post" enctype="multipart/form-data">
+                                @csrf
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="name">Название</label>
+                                        <div class="mb-16">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Название..">
+                                        </div>
+                                        @error('name')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+
+                                        <label for="name">Url</label>
+                                        <div class="mb-16">
+                                            <input type="text" class="form-control" id="url" name="url" placeholder="Url..">
+                                        </div>
+                                        @error('url')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+
+                                        <label for="name">Cpm</label>
+                                        <div class="mb-16">
+                                            <input type="text" class="form-control" id="cpm" name="cpm" placeholder="Cpm..">
+                                        </div>
+                                        @error('cpm')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="bundle_id">Id профиля цели</label>
+                                        <div class="mb-16">
+                                            <input type="number" class="form-control" id="targeting_profile_id" name="targeting_profile_id" placeholder="Id профиля цели..">
+                                        </div>
+                                        @error('targeting_profile_id')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+
+                                        <label for="bundle_id">Id bundle</label>
+                                        <div class="mb-16">
+                                            <input type="number" class="form-control" id="bundle_id" name="bundle_id" placeholder="Id bundle..">
+                                        </div>
+                                        @error('bundle_id')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+
+                                    <div class="form-group col-md-12">
+                                        <!-- Summernote (.js-summernote + .js-summernote-air classes are initialized in Helpers.summernote()) -->
+                                        <!-- For more info and examples you can check out http://summernote.org/ -->
+                                        <div class="block">
+                                            <div class="block-header block-header-default">
+                                                <h3 class="block-title">Креатив</h3>
+                                                <div class="block-options">
+                                                    <button type="button" class="btn-block-option">
+                                                        <i class="si si-wrench"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <label for="text" hidden></label>
+                                            <textarea id="text" name="creative" style="width: 100%; min-height: 150px;"></textarea>
+                                        </div>
+                                        @error('creative')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
+                                    <!-- END Summernote -->
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-sm-6 col-xl-4">
+                                        <button type="submit" class="btn btn-primary min-width-125">Сохранить</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <!-- END Default Elements -->
+                </div>
+            </div>
+
+
+        </div>
+        <!-- END Page Content -->
+    </main>
+    <!-- END Main Container -->
+@endsection

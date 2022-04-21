@@ -1,0 +1,74 @@
+/* breadcrumb section - start
+==================================================================================================== */
+.breadcrumb-section {
+
+	// breadcrumb-big-title - start
+	.breadcrumb-big-title {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		.overlay-black {background-color: rgba(0,0,0,0.5);}
+		.title-text {
+			font-size: 36px;
+			font-weight: 600;
+			text-align: center;
+			color: $white-color;
+			text-transform: uppercase;
+		}
+	}
+	// breadcrumb-big-title - end
+
+	// breadcrumb-list - start
+	.breadcrumb-list {
+		padding: 30px 0px;
+		background-color: $gray-color;
+		ul {
+			margin: 0px;
+			padding: 0px;
+			li {
+				float: left;
+				font-size: 18px;
+				font-weight: 600;
+				list-style: none;
+				position: relative;
+				color: $body-color;
+				margin-right: 30px;
+				padding-right: 30px;
+				display: inline-block;
+				text-transform: uppercase;
+				&:after {
+					top: 50%;
+					right: -8px;
+					content: '\f101';
+					font-weight: 900;
+					position: absolute;
+					color: $body-color;
+					transform: translateY(-50%);
+					font-family: 'Font Awesome 5 Free'
+				}
+				&:last-child {
+					margin-right: 0px;
+					padding-right: 0px;
+					&:after {display: none;}
+				}
+				a {
+					font-size: 18px;
+					font-weight: 600;
+					color: $body-color;
+					text-transform: uppercase;
+				}
+				&:hover {
+					color: $heading-color;
+					a {color: $heading-color;}
+				}
+			}
+			li.active {
+				color: $heading-color;
+				a {color: $heading-color;}
+			}
+		}
+	}
+	// breadcrumb-list - end
+}
+/* breadcrumb section - end
+==================================================================================================== */

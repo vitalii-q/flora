@@ -1,0 +1,51 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 25/06/2018 21:54
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon-package-3/flaticon-3.eot");
+  src: url("../fonts/flaticon-package-3/flaticon-3.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon-package-3/flaticon-3.woff") format("woff"),
+       url("../fonts/flaticon-package-3/flaticon-3.ttf") format("truetype"),
+       url("../fonts/flaticon-package-3/flaticon-3.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon-package-3/flaticon-3.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  line-height: 1;
+  font-style: normal;
+  font-family: Flaticon;
+}
+
+.flaticon-null:before { content: "\f100"; }
+.flaticon-concrete:before { content: "\f101"; }
+.flaticon-wheelbarrow:before { content: "\f102"; }
+.flaticon-clean:before { content: "\f103"; }
+.flaticon-hammer:before { content: "\f104"; }
+.flaticon-chainsaw:before { content: "\f105"; }
+.flaticon-liquid-soap:before { content: "\f106"; }
+.flaticon-generator:before { content: "\f107"; }
+.flaticon-lawn-mower:before { content: "\f108"; }
+.flaticon-workshop:before { content: "\f109"; }
+.flaticon-car-parts:before { content: "\f10a"; }
+.flaticon-grill:before { content: "\f10b"; }
+.flaticon-wrench:before { content: "\f10c"; }
+.flaticon-toolbox:before { content: "\f10d"; }
+.flaticon-necklace-1:before { content: "\f10e"; }
+.flaticon-diamond:before { content: "\f10f"; }
+.flaticon-brooch:before { content: "\f110"; }
+.flaticon-jewelry-set:before { content: "\f111"; }
+.flaticon-jewel:before { content: "\f112"; }
+.flaticon-bracelet:before { content: "\f113"; }
+.flaticon-necklace:before { content: "\f114"; }

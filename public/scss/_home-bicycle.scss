@@ -1,0 +1,745 @@
+/* bicycle home page 1 - start
+==================================================================================================== */
+// some changes here - start
+// ==================================================
+.home-bicycle-1 {
+	
+	.container {
+		margin: 0 auto;
+		max-width: 1464px;
+	}
+
+}
+// some changes here - end
+// ==================================================
+
+
+
+// slider-section - start
+// ==================================================
+.home-bicycle-1 {
+	.slider-section {
+		.slider-item
+		.overlay-black {
+			padding: 180px 0px;
+			padding-top: 350px;
+			background-color: rgba(0,0,0,0.5);
+		}
+
+		.slider-content {
+			h1 {
+				font-size: 72px;
+				font-weight: 800;
+			}
+			h2 {
+				font-size: 42px;
+				font-weight: 600;
+			}
+			h3 {
+				font-size: 30px;
+				font-weight: 600;
+			}
+		}
+	}
+}
+// slider-section - end
+// ==================================================
+
+
+
+// promotion-section - start
+// ==================================================
+.home-bicycle-1 {
+	.promotion-section {
+		padding: 30px 15px;
+	}
+}
+.promotion-section {
+	.bicycle-1-promotion {
+		height: 580px;
+		overflow: hidden;
+		border-radius: 3px;
+		position: relative;
+		&:before {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+			opacity: 0;
+			content: '';
+			position: absolute;
+			transition: $default-transition;
+			background-color: rgba(0,0,0,0.5);
+		}
+		img {
+			width: 100%;
+			display: block;
+			transform: scale(1);
+			transition: $default-transition;
+		}
+		&:hover {
+			img {transform: scale(1.1);}
+			&:before {opacity: 1;}
+		}
+		.promotion-content {
+			left: 0;
+			top: 50%;
+			right: 0;
+			z-index: 2;
+			padding: 30px;
+			position: absolute;
+			transform: translateY(-50%);
+			h3 {
+				font-size: 36px;
+				font-weight: 600;
+				text-transform: uppercase;
+				text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+			}
+			h3 {
+				font-size: 48px;
+				font-weight: 800;
+				text-transform: uppercase;
+				text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+			}
+			p {
+				font-size: 16px;
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+// promotion-section - start
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.featured-section {
+	.featured-container {
+		.digital-featured-nav {
+			width: 100%;
+			display: table;
+			margin-bottom: 30px;
+			border-bottom: 1px solid $gray-deep-color;
+			li {
+				z-index: 1;
+				float: left;
+				margin-bottom: -1px;
+				display: inline-block;
+				a {
+					width: 100%;
+					height: 100%;
+					display: block;
+					font-size: 18px;
+					font-weight: 600;
+					padding: 15px 30px;
+					color: $heading-color;
+					text-transform: uppercase;
+					border-top-left-radius: 3px;
+					border-top-right-radius: 3px;
+					border: 1px solid transparent;
+				}
+				&:hover {
+					a {
+						color: $past-color;
+					}
+				}
+				a.active {
+					color: $past-color;
+					border-color: $gray-deep-color;
+					border-bottom-color: $white-color;
+				}
+			}
+		}
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// hot-product-section - start
+// ==================================================
+.hot-product-section {
+	.hottest-bicycles {
+		position: relative;
+		.big-image {
+			left: 0;
+			width: 50%;
+			float: left;
+			bottom: -60px;
+			overflow: hidden;
+			position: absolute;
+		}
+		.featured-container {
+			position: relative;
+			.nav {
+				right: 0;
+				top: -78px;
+				z-index: 1;
+				width: 727px;
+				display: table;
+				position: absolute;
+				li {
+					float: left;
+					display: inline-block;
+					a {
+						padding: 10px 20px;
+						border-top-left-radius: 3px;
+						border-top-right-radius: 3px;
+						border: 1px solid transparent;
+					}
+					&:hover {
+						a {color: $past-color;}
+					}
+					a.active {
+						color: $past-color;
+						border-color: $gray-deep-color;
+						border-bottom-color: $gray-color;
+					}
+				}
+			}
+
+			.tab-content {
+				.tab-pane {
+					.product-item {
+						background-color: $gray-color;
+						.image-container {
+							img {
+								width: 100%;
+								height: 100%;
+								display: block;
+							}
+						}
+						.hover-content {background-color: $gray-color;}
+					}
+				}
+			}
+		}
+	}
+}
+// hot-product-section - end
+// ==================================================
+
+/* bicycle home page 1 - end
+==================================================================================================== */
+
+
+
+
+
+/* bicycle home page 2 - start
+==================================================================================================== */
+
+// some changes here - start
+// ==================================================
+.home-bicycle-2 {
+
+	::selection {color: $pure-red;}
+
+	// form settinge - start
+	.form-item {
+		input {
+			&:focus {
+				border-color: $pure-red;
+				+.form-item-btn {
+					background-color: $pure-red;
+				}
+			}
+		}
+	}
+	.form-textarea {
+		margin-bottom: 30px;
+		textarea {
+			&:focus {
+				border-color: $pure-red;
+			}
+		}
+	}
+	// form settinge - end
+
+	// quick-view - start
+	.quick-view {
+		background-color: rgba(237, 43, 43, .5);
+		&:hover {
+			background-color: rgba(237, 43, 43, 1);
+		}
+	}
+	// quick-view - end
+
+	// post-meta - start
+	.post-meta {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: $pure-red;
+					}
+				}
+			}
+		}
+	}
+	// post-meta - end
+
+	// owl settings - start
+	.owl-theme {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					&:before {
+						background-color: $pure-red;
+					}
+				}
+			}
+		}
+		.owl-dots {
+			.owl-dot.active {
+				span {
+					background: $pure-red;
+				}
+			}
+		}
+	}
+	// owl settings - end
+
+	// plus-effect - start
+	.plus-effect {
+		&:before,
+		&:after {
+			background-color: $pure-red;
+		}
+	}
+	// plus-effect - end
+
+	// product-item - start
+	.product-item {
+		.item-content {
+			.item-title {
+				&:hover {color: $pure-red;}
+			}
+		}
+		.hover-content {
+			.add-to-cart {
+				&:hover {
+					border-color: $pure-red;
+					background-color: $pure-red;
+				}
+			}
+			.product-meta {
+				ul {
+					li {
+						a {
+							&:hover {color: $pure-red;}
+						}
+					}
+				}
+			}
+		}
+	}
+	// product-item - end
+
+	// item-title - start
+	.item-title {
+		&:hover {
+			color: $pure-red;
+		}
+	}
+	// item-title - start
+
+}
+// some changes here - end
+// ==================================================
+
+
+
+// slider-section - start
+// ==================================================
+.home-bicycle-2 {
+	.slider-section {
+		.slider-item {
+			padding: 150px 0px;
+			.slider-content {
+				h1 {
+					font-size: 66px;
+					font-weight: 800;
+				}
+				h2 {
+					font-size: 36px;
+					font-weight: 600;
+				}
+
+				.color-list {
+					ul {
+						li {
+							width: 30px;
+							height: 30px;
+							overflow: hidden;
+							text-align: center;
+							margin-right: 10px;
+							border-radius: 100%;
+							&:last-child {margin-right: 0px;}
+							a {
+								width: 100%;
+								height: 100%;
+								display: block;
+								text-align: center;
+								position: relative;
+								&:before {
+									top: 50%;
+									left: 50%;
+									opacity: 0;
+									font-size: 14px;
+									font-weight: 900;
+									content: '\f00c';
+									position: absolute;
+									color: $white-color;
+									transform: translate(-50%,-50%);
+									font-family: 'Font Awesome 5 Free';
+								}
+							}
+							.active {
+								&:before {
+									opacity: 1;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// slider-section - end
+// ==================================================
+
+
+
+// category-section - start
+// ==================================================
+.category-section {
+	.bicycle-2-category {
+		padding: 30px 15px;
+		img {
+			width: 100%;
+			display: block;
+			transform: scale(1);
+			transition: $default-transition;
+		}
+		.category-item {
+			overflow: hidden;
+			border-radius: 3px;
+			position: relative;
+			&:before {
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 1;
+				opacity: 0;
+				content: '';
+				position: absolute;
+				transition: $default-transition;
+				background-color: rgba(0,0,0,0.5);
+			}
+			.item-title {
+				left: 50%;
+				z-index: 2;
+				margin: 0px;
+				bottom: 30px;
+				display: table;
+				font-size: 24px;
+				position: absolute;
+				text-transform: uppercase;
+				transform: translateX(-50%);
+				transition: $default-transition;
+			}
+			&:hover {
+				&:before {opacity: 1;}
+				img {transform: scale(1.1);}
+				.item-title {
+					bottom: 40px;
+					color: $white-color;
+					text-decoration: underline;
+					&:hover {color: $pure-red;}
+				}
+			}
+		}
+	}
+}
+// category-section - end
+// ==================================================
+
+
+
+// promotion-section - start
+// ==================================================
+.promotion-section {
+	.bicycle2-promotion-masonry {
+		margin-left: -15px;
+		margin-right: -15px;
+		.grid-sizer,
+		.grid-item {
+			float: left;
+			overflow: hidden;
+			position: relative;
+			display: inline-block;
+		}
+		.grid-item {
+			width: 50%;
+			height: auto;
+			padding: 15px;
+			.image-container {
+				img {
+					transform: scale(1);
+					transition: $default-transition;
+				}
+			}
+			&:before {
+				top: 15px;
+				left: 15px;
+				right: 15px;
+				bottom: 15px;
+				z-index: 1;
+				opacity: 0;
+				content: '';
+				position: absolute;
+				border-radius: 3px;
+				transition: $default-transition;
+				background-color: rgba(0,0,0,0.5);
+			}
+			&:hover {
+				.image-container {
+					img {transform: scale(1.1);}
+				}
+				&:before {opacity: 1;}
+			}
+			.promotion-content {
+				top: 50%;
+				left: 15px;
+				z-index: 2;
+				right: 15px;
+				padding: 30px;
+				position: absolute;
+				text-align: center;
+				transform: translateY(-50%);
+				h2 {
+					font-size: 30px;
+					font-weight: 800;
+					text-transform: uppercase;
+				}
+				h3 {
+					font-size: 24px;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+				h4 {
+					font-size: 18px;
+					font-weight: 400;
+					text-transform: uppercase;
+				}
+			}
+		}
+		.promotion-big {
+			width: 50%;
+			height: auto;
+			.promotion-content {
+				h3 {
+					font-size: 36px;
+					font-weight: 600;
+					text-transform: uppercase;
+					text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+				}
+				h2 {
+					font-size: 42px;
+					font-weight: 800;
+					text-transform: uppercase;
+					text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+				}
+			}
+		}
+	}
+}
+// promotion-section - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.home-bicycle-2 {
+	.featured-section {
+		.featured-container {
+			.digital-featured-nav {
+				li {
+					a {
+						&:hover {
+							color: $pure-red;
+						}
+					}
+					a.active {
+						color: $pure-red;
+					}
+				}
+			}
+		}
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// promotion-banner-section - start
+// ==================================================
+.home-bicycle-2 {
+	.promotion-banner-section {
+		.bicycle-banner {
+			padding: 230px 0px;
+		}
+	}
+}
+// promotion-banner-section - end
+// ==================================================
+
+
+
+// trending-section - start
+// ==================================================
+.trending-section {
+	.bicycle-trending-products {
+
+		.trending-item {
+			margin-bottom: 30px;
+			.item-image {
+				float: left;
+				width: 150px;
+				padding: 5px;
+				height: 150px;
+				margin-right: 15px;
+				border-radius: 3px;
+				border: 1px solid $gray-deep-color;
+				.image-container {
+					border-radius: 3px;
+					border: 1px solid $gray-deep-color;
+				}
+			}
+			.item-content {
+				display: table;
+				.item-title {
+					margin-bottom: 15px;
+				}
+				.item-price {
+					strong {
+						font-size: 24px;
+						color: $heading-color;
+					}
+				}
+			}
+		}
+
+	}
+}
+.home-bicycle-2 {
+	.trending-section {
+		.bicycle-trending-products {
+			.deal-item {
+				border-color: $pure-red;
+				background-color: $gray-color;
+				.item-content {
+					.progress {
+						.progress-bar {
+							background-color: $heading-color;
+						}
+					}
+
+				}
+			}
+		}
+
+	}
+}
+// trending-section - end
+// ==================================================
+
+
+
+// blog-section - start
+// ==================================================
+.home-bicycle-2 {
+	.blog-section {
+		.blog-grid-item {
+			.blog-content {
+				padding: 0px;
+				.blog-title {
+					&:hover {color: $pure-red;}
+				}
+			}
+		}
+	}
+}
+// blog-section - end
+// ==================================================
+
+
+
+// footer-section - end
+// ==================================================
+.home-bicycle-2 {
+	.footer-section {
+		.bicycle-footer {
+
+			.footer-middle {
+				.footer-contact {
+					.social-links {
+						ul {
+							li {
+								a {
+									&:hover {
+										background-color: $pure-red;
+									}
+								}
+							}
+						}
+					}
+				}
+				.useful-links {
+					ul {
+						li {
+							a {
+								&:hover {
+									color: $pure-red;
+								}
+							}
+						}
+					}
+				}
+				.footer-newsletter {
+					input[type=email] {
+						&:focus {
+							border-color: $pure-red;
+						}
+					}
+				}
+				.useful-link-list {
+					ul {
+						li {
+							a {
+								&:hover {color: $pure-red;}
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+// footer-section - end
+// ==================================================
+
+/* bicycle home page 2 - end
+==================================================================================================== */

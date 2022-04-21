@@ -1,0 +1,965 @@
+/* home food 1 - start
+==================================================================================================== */
+// some changes - start
+// ==================================================
+.home-food-1 {
+
+	::selection {color: $orange-color;}
+
+	// form settinge - start
+	.form-item {
+		input {
+			&:focus {
+				border-color: $orange-color;
+				+.form-item-btn {
+					background-color: $orange-color;
+				}
+			}
+		}
+	}
+	.form-textarea {
+		margin-bottom: 30px;
+		textarea {
+			&:focus {
+				border-color: $orange-color;
+			}
+		}
+	}
+	// form settinge - end
+
+	// quick-view - start
+	.quick-view {
+		background-color: rgba(242, 143, 0, .5);
+		&:hover {
+			background-color: rgba(242, 143, 0, 1);
+		}
+	}
+	// quick-view - end
+
+	// post-meta - start
+	.post-meta {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: $orange-color;
+					}
+				}
+			}
+		}
+	}
+	// post-meta - end
+
+	// owl settings - start
+	.owl-theme {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					&:before {
+						background-color: $orange-color;
+					}
+				}
+			}
+		}
+		.owl-dots {
+			.owl-dot.active {
+				span {
+					background: $orange-color;
+				}
+			}
+		}
+	}
+	// owl settings - end
+
+	// plus-effect - start
+	.plus-effect {
+		&:before,
+		&:after {
+			background-color: $orange-color;
+		}
+	}
+	// plus-effect - end
+
+	// product-item - start
+	.product-item {
+		.item-content {
+			.item-title {
+				&:hover {color: $orange-color;}
+			}
+		}
+		.hover-content {
+			.add-to-cart {
+				&:hover {
+					border-color: $orange-color;
+					background-color: $orange-color;
+				}
+			}
+			.product-meta {
+				ul {
+					li {
+						a {
+							&:hover {color: $orange-color;}
+						}
+					}
+				}
+			}
+		}
+	}
+	// product-item - end
+
+	// item-title - start
+	.item-title {
+		&:hover {
+			color: $orange-color;
+		}
+	}
+	// item-title - start
+
+}
+// some changes - end
+// ==================================================
+
+
+
+// slider-section - start
+// ==================================================
+.home-food-1 {
+	.slider-section {
+		.slider-item {
+			padding: 150px 0px;
+			.slider-content {
+				h1 {
+					font-size: 36px;
+					font-weight: 800;
+				}
+				.dancing-script {
+					font-weight: 600;
+					text-transform: capitalize;
+				}
+				h2 {
+					font-size: 60px;
+					font-weight: 600;
+				}
+				h3 {
+					font-size: 24px;
+					font-weight: 500;
+				}
+				.tag-list {
+					ul {
+						li {
+							position: relative;
+							margin-right: 10px;
+							padding-right: 10px;
+							&:after {
+								top: 0;
+								right: 0;
+								bottom: 0;
+								content: '|';
+								position: absolute;
+								color: rgba(0,0,0,0.5);
+							}
+							&:last-child {
+								margin-right: 0px;
+								padding-right: 0px;
+								&:after {display: none;}
+							}
+							a {
+								text-transform: capitalize;
+								&:focus {outline: none;}
+								&:hover {color: $orange-color;}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// slider-section - end
+// ==================================================
+
+
+
+// deals-section - start
+// ==================================================
+.home-food-1 {
+	.deals-section {
+		.food-deal-carousel {
+			.owl-stage-outer {padding: 5px 0px;}
+			.item {
+				.deal-item {
+					border-color: $gray-deep-color;
+					.count-down {
+						left: 0;
+						right: 0;
+						bottom: 165px;
+						position: absolute;
+					}
+					.item-content {
+						.item-title {color: $orange-color;}
+					}
+				}
+			}
+			.owl-nav {
+				right: 0;
+				top: -77px;
+				position: absolute;
+			}
+		}
+	}
+}
+// deals-section - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.home-food-1 {
+	.featured-section {
+
+		.featured-container {
+			.digital-featured-nav {
+				li {
+					&:hover {
+						a {color: $orange-color;}
+					}
+					a.active {
+						color: $orange-color;
+					}
+				}
+			}
+		}
+
+		.promotion-item {
+			.promotion-img {
+				img {
+					width: 100%;
+					display: block;
+				}
+			}
+		}
+
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// trending-section - start
+// ==================================================
+.home-food-1 {
+	.trending-section {
+
+		.products-tab {
+			.products-tab-nav {
+				.nav {
+					li {
+						&:hover {
+							a {
+								color: $orange-color
+							}
+						}
+						a.active {
+							color: $orange-color;
+						}
+					}
+				}
+			}
+			.tab-content {
+				.tab-pane {
+					.product-item {
+						.product-content {
+							.product-title {
+								&:hover {
+									color: $orange-color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+// trending-section - end
+// ==================================================
+
+
+
+// healthy-food-section - start
+// ==================================================
+.healthy-food-section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	.healthy-food-carousel {
+		.item {
+			&:hover {
+				.foog-image {
+					.absolute-cartview {
+						opacity: 1;
+						transform: translate(-50%,-50%);
+					}
+				}
+			}
+			.food-content {
+				padding: 15px;
+				.item-title {
+					&:hover {
+						color: $orange-color;
+					}
+				}
+			}
+		}
+	}
+	.owl-theme {
+		.owl-nav {
+			right: 0;
+			top: -77px;
+			display: table;
+			position: absolute;
+		}
+	}
+}
+// healthy-food-section - end
+// ==================================================
+
+
+
+// popular-section - start
+// ==================================================
+.home-food-1 {
+	.popular-section {
+		.most-viewde-products {
+			.most-viewde-item {
+				.item-title {
+					&:hover {
+						color: $orange-color;
+					}
+				}
+			}
+		}
+	}
+}
+// popular-section - end
+// ==================================================
+
+
+
+// popular-section - start
+// ==================================================
+.home-food-1 {
+	.brand-logo-section {
+		.digital-brandlogo {
+			.owl-theme {
+				.owl-nav {
+					.owl-next,
+					.owl-prev {
+						&:hover{
+							&:before {
+								background: $orange-color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// popular-section - end
+// ==================================================
+
+
+
+// latest-post-section - start
+// ==================================================
+.latest-post-section {
+	.latest-post-list {
+		ul {
+			margin: 0px;
+			padding: 0px;
+			.post-item {
+				width: 100%;
+				display: table;
+				list-style: none;
+				margin-bottom: 60px;
+				&:last-child {margin-bottom: 0px;}
+				.item-image {
+					float: left;
+					width: 130px;
+					padding: 5px;
+					height: 130px;
+					overflow: hidden;
+					margin-right: 15px;
+					border-radius: 3px;
+					border: 1px solid $gray-deep-color;
+				}
+
+				.item-content {
+					display: table;
+					.rateing-star {
+						margin-bottom: 10px;
+						ul {
+							li {
+								color: #f3cd1e;
+								margin-right: 5px;
+							}
+						}
+					}
+					.item-title {
+						font-size: 14px;
+						margin-bottom: 15px;
+					}
+					.item-price {
+						strong {
+							font-size: 18px;
+							font-weight: 600;
+						}
+					}
+				}
+
+				&:hover {
+					.item-content {
+						.item-title {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// latest-post-section - end
+// ==================================================
+
+/* home food 1 - end
+==================================================================================================== */
+
+
+
+
+
+/* home food 2 - start
+==================================================================================================== */
+// some changes here - start
+// ==================================================
+.home-food-2 {
+
+	::selection {color: $maroon-color;}
+
+	// form settinge - start
+	.form-item {
+		input {
+			&:focus {
+				border-color: $maroon-color;
+				+.form-item-btn {
+					background-color: $maroon-color;
+				}
+			}
+		}
+	}
+	.form-textarea {
+		margin-bottom: 30px;
+		textarea {
+			&:focus {
+				border-color: $maroon-color;
+			}
+		}
+	}
+	// form settinge - end
+
+	// quick-view - start
+	.quick-view {
+		background-color: rgba(191, 11, 38, .5);
+		&:hover {
+			background-color: rgba(191, 11, 38, 1);
+		}
+	}
+	// quick-view - end
+
+	// post-meta - start
+	.post-meta {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: $maroon-color;
+					}
+				}
+			}
+		}
+	}
+	// post-meta - end
+
+	// owl settings - start
+	.owl-theme {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					&:before {
+						background-color: $maroon-color;
+					}
+				}
+			}
+		}
+		.owl-dots {
+			.owl-dot.active {
+				span {
+					background: $maroon-color;
+				}
+			}
+		}
+	}
+	// owl settings - end
+
+	// plus-effect - start
+	.plus-effect {
+		&:before,
+		&:after {
+			background-color: $maroon-color;
+		}
+	}
+	// plus-effect - end
+
+	// product-item - start
+	.product-item {
+		.item-content {
+			.item-title {
+				&:hover {color: $maroon-color;}
+			}
+		}
+		.hover-content {
+			.add-to-cart {
+				&:hover {
+					border-color: $maroon-color;
+					background-color: $maroon-color;
+				}
+			}
+			.product-meta {
+				ul {
+					li {
+						a {
+							&:hover {color: $maroon-color;}
+						}
+					}
+				}
+			}
+		}
+	}
+	// product-item - end
+
+	// item-title - start
+	.item-title {
+		&:hover {
+			color: $olive-green;
+		}
+	}
+	// item-title - start
+
+}
+// some changes here - end
+// ==================================================
+
+
+
+// slider-section (food-banner) - start
+// ==================================================
+.slider-section {
+	.food-banner {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		.banner-content {
+			h2 {font-size: 42px;}
+			h1 {
+				font-size: 36px;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+			h3 {
+				font-size: 54px;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+// slider-section (food-banner) - end
+// ==================================================
+
+
+
+// promotion-section (food2-promotion-masonry) - start
+// ==================================================
+.promotion-section {
+	.food2-promotion-masonry {
+		padding: 15px 0px;
+		margin-left: -15px;
+		margin-right: -15px;
+		.grid-sizer,
+		.grid-item {
+			float: left;
+			width: 400px;
+			height: 260px;
+			padding: 15px;
+			position: relative;
+			display: inline-block;
+			.promotion-img {
+				img {
+					width: 100%;
+					height: 100%;
+					display: block;
+				}
+			}
+			&:hover {
+				box-shadow: none;
+				.promotion-img {
+					box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 20px 0 rgba(0, 0, 0, 0.12), 0 2px 8px -1px rgba(0, 0, 0, 0.3);
+				}
+			}
+		}
+		.grid-width {
+			width: 800px;
+		}
+		.grid-height {
+			width: 400px;
+			height: 506px;
+			.promotion-img {
+				img {
+					width: 100%;
+					height: 100%;
+					display: block;
+				}
+			}
+		}
+	}
+}
+// promotion-section (food2-promotion-masonry) - end
+// ==================================================
+
+
+
+// featured-section - start
+// ==================================================
+.home-food-2 {
+	.featured-section {
+		.featured-container {
+			.digital-featured-nav {
+				li {
+					&:hover {
+						a {color: $maroon-color;}
+					}
+					a.active {color: $maroon-color;}
+				}
+			}
+		}
+	}
+}
+// featured-section - end
+// ==================================================
+
+
+
+// promotion-banner-section (food-banner) - start
+// ==================================================
+.promotion-banner-section {
+	.food-banner {
+		.promotion-content {
+			h3 {font-size: 42px;}
+			h2 {
+				font-size: 72px;
+				font-weight: 800;
+			}
+		}
+	}
+}
+// promotion-banner-section (food-banner) - end
+// ==================================================
+
+
+
+// icecream-section - start
+// ==================================================
+.icecream-section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	.icecream-tebs-nav {
+		width: 100%;
+		margin-bottom: 30px;
+		border-bottom: 1px solid $gray-deep-color;
+		li {
+			z-index: 1;
+			margin-bottom: -1px;
+			a {
+				z-index: 1;
+				padding: 15px 30px;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+				border: 1px solid transparent;
+				&:hover {
+					color: $maroon-color;
+				}
+			}
+			.active {
+				color: $maroon-color;
+				border-color: $gray-deep-color;
+				border-bottom-color: $white-color;
+			}
+		}
+	}
+
+	.tab-content {
+		.tab-pane {
+			height: 0px;
+			display: block;
+			visibility: hidden;
+		}
+		.tab-pane.active {
+			height: auto;
+			visibility: visible;
+		}
+		.owl-carousel {
+			.item {
+				&:hover {
+					.foog-image {
+						.absolute-cartview {
+							opacity: 1;
+							transform: translate(-50%,-50%);
+						}
+					}
+				}
+				.food-content {
+					padding: 15px;
+					.item-title {
+						margin-bottom: 5px;
+						&:hover {color: $maroon-color;}
+					}
+					.item-price {
+						strong {
+							font-size: 24px;
+							font-weight: 600;
+						}
+					}
+				}
+			}
+
+			.owl-nav {
+				.owl-next,
+				.owl-prev {
+					top: 100px;
+					position: absolute;
+					&:hover {
+						&:before {
+							background-color: $maroon-color;
+						}
+					}
+				}
+				.owl-prev {left: -50px;}
+				.owl-next {right: -50px;}
+			}
+		}
+	}
+}
+// icecream-section - end
+// ==================================================
+
+
+
+// local-menu-section - start
+// ==================================================
+.local-menu-section {
+
+	.local-menu-list {
+		ul {
+			li {
+				margin-bottom: 15px;
+				&:last-child {margin-bottom: 0px;}
+				a {
+					width: 100%;
+					display: block;
+					position: relative;
+					padding-right: 30px;
+					i {margin-right: 10px;}
+					&:after {
+						top: 50%;
+						right: 15px;
+						font-size: 16px;
+						content: '\f105';
+						font-weight: 900;
+						position: absolute;
+						transform: translateY(-50%);
+						font-family: 'Font Awesome 5 Free';
+					}
+					&:hover {color: $maroon-color;}
+				}
+				.active {color: $maroon-color;}
+			}
+		}
+	}
+
+	.tab-content {
+		.tab-pane {
+			padding: 15px 30px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			.local-item {
+				padding: 15px;
+				margin: 15px 0px;
+				background-color: $white-color;
+				.item-image {
+					float: left;
+					width: 130px;
+					height: 130px;
+					overflow: hidden;
+					margin-right: 15px;
+					border-radius: 3px;
+				}
+				.item-content {
+					display: table;
+					.item-title {
+						font-size: 14px;
+						margin-bottom: 10px;
+						&:hover {color: $maroon-color;}
+					}
+					.item-price {
+						strong {
+							font-size: 18px;
+							font-weight: 600;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// local-menu-section - end
+// ==================================================
+
+
+
+// popular-section (most-viewde-products) - start
+// ==================================================
+.home-food-2 {
+	.popular-section {
+		.most-viewde-products {
+			.most-viewde-item {
+				.item-title {
+					&:hover {
+						color: $maroon-color;
+					}
+				}
+			}
+		}
+	}
+}
+// popular-section (most-viewde-products) - end
+// ==================================================
+
+
+
+// blog-section - start
+// ==================================================
+.home-food-2 {
+	.blog-section {
+
+		.blog-grid-item-2 {
+
+			&:hover {
+				.blog-content {
+					.blog-title {
+						color: $maroon-color;
+					}
+				}
+			}
+		}
+
+	}
+}
+// blog-section - end
+// ==================================================
+
+
+
+// brand-logo-section - start
+// ==================================================
+.home-food-2 {
+	.brand-logo-section {
+		.digital-brandlogo {
+			.owl-theme {
+				.owl-nav {
+					.owl-next,
+					.owl-prev {
+						&:hover {
+							&:before {
+								background-color: $maroon-color;
+							}
+						}
+					}
+				}
+
+				.owl-dots {
+					.owl-dot.active {
+						span {
+							background: $maroon-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// brand-logo-section - end
+// ==================================================
+
+
+
+// footer-section - start
+// ==================================================
+.home-food-2 {
+	.footer-section {
+		.food-footer {
+
+			.footer-middle {
+				.useful-links {
+					ul {
+						li {
+							a {
+								&:hover {
+									color: $maroon-color;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.footer-bottom {
+				.social-links {
+					ul {
+						li {
+							a {
+								&:hover {
+									color: $maroon-color;
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+// footer-section - end
+// ==================================================
+/* home food 2 - end
+==================================================================================================== */
