@@ -45,8 +45,6 @@ class AdfoxController extends Controller
             'targeting_profile_id' => 'numeric|nullable',
             'bundle_id' => 'numeric|nullable'
         ]);
-        //dd($request->ctr_d);
-        //'name', 'creative', 'url', 'targeting_profile_id', 'bundle_id', 'cpm'
 
         // создает новую запись в таблице
         Adfox::create([
